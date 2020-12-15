@@ -3,7 +3,7 @@
   "private": true,
   "description": "Website for CIS 197: JavaScript Web Development",
   "version": "0.1.1",
-  "author": "CIS 197 Staff <ccabo@seas.upenn.edu>",
+  "author": "Jesiel Viana <jesiel@ifpi.edu.br>",
   "scripts": {
     "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",

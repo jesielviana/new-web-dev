@@ -75,3 +75,5 @@ MDX is a superset (kinda, as will be described) of Markdown which allows you to 
 1. MDX does not like it when you are writing a multiline string in JS. Like at all. It will also get soooo confused if you have a comment or string in JavaScript which contains anything HTML-like. _To write a multiline string with an empty line, that line needs to have a space at the start of it._
 
 1. MDX can't really interface well with Prism out of the box. For this reason, we made a `<Code />` component which handles this for us. It works pretty well but is a little more verbose than straight up markdown.
+
+Icon from <a href="https://iconscout.com/icons/webpage" target="_blank">Webpage Icon</a> by <a href="https://iconscout.com/contributors/dario-ferrando">Dario Ferrando</a> on <a href="https://iconscout.com">Iconscout</a>

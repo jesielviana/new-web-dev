@@ -27,7 +27,7 @@ const FooterTag = s.footer`
 
 export const Footer = ({ active }) => (
   <Wrapper active={active}>
-    <FooterTag>CIS 197 Staff &copy; {new Date().getFullYear()}</FooterTag>
+    <FooterTag>@jesielviana &copy; {new Date().getFullYear()}</FooterTag>
   </Wrapper>
 )
 

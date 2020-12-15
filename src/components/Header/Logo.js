@@ -1,7 +1,7 @@
 import React from 'react'
 import s from 'styled-components'
 
-import logo from '../../images/logo.svg'
+import logo from '../../images/webpage.svg'
 import { maxWidth, TABLET } from '../../constants/widths'
 
 const Wrapper = s.img`

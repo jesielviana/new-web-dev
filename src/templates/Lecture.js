@@ -7,7 +7,7 @@ import sharedStyles from './sharedStyles'
 import { maxWidth, PHONE, minWidth, TABLET } from '../constants/widths'
 import { HOME_ROUTE } from '../constants/routes'
 import { GRAY } from '../constants/colors'
-import logo from '../images/logo.svg'
+import logo from '../images/webpage.svg'
 
 const LEFT_KEY_CODE = 37
 const RIGHT_KEY_CODE = 39

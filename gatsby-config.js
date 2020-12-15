@@ -1,23 +1,18 @@
 module.exports = {
-  pathPrefix: '/',
+  pathPrefix: '/new-web-dev/',
   siteMetadata: {
     title: 'Web Dev',
-    description: `Student-taught 19X course on JavaScript web development at the University of Pennsylvania.`, // eslint-disable-line
-    author: 'Cameron Cabo <ccabo@seas.upenn.edu>',
+    description: `Curso de Programação para Web do IFPI Campus Picos.`, // eslint-disable-line
+    author: 'Jesiel Viana <jesiel@ifpi.edu.br>',
     keywords: [
-      'javascript',
+      'web',
       'js',
-      '197',
-      'cis197',
-      'cis',
-      'seas',
-      'penn',
-      'upenn',
-      'university',
-      'pennsylvania',
+      'html',
+      'css',
+      'ifpi',
       'script',
-      'react',
-      'learn'
+      'http',
+      'ensino'
     ],
     image: 'https://s3.amazonaws.com/riploventures/cis197-bg.png'
   },
@@ -58,7 +53,7 @@ module.exports = {
         background_color: '#FFFFFF',
         theme_color: '#0c417c',
         display: 'minimal-ui',
-        icon: 'src/images/logo-square.png' // Path is relative to site root
+        icon: 'src/images/webpage.svg' // Path is relative to site root
       }
     },
     {
