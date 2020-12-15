@@ -48,5 +48,5 @@ export const Bars = ({ handleClick }) => (
 )
 
 Bars.propTypes = {
-  handleClick: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired
 }

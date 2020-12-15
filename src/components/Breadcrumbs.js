@@ -98,13 +98,13 @@ const Breadcrumbs = ({ location }) => {
 }
 
 Breadcrumbs.defaultProps = {
-  location: {},
+  location: {}
 }
 
 Breadcrumbs.propTypes = {
   location: PropTypes.shape({
-    pathname: PropTypes.string,
-  }),
+    pathname: PropTypes.string
+  })
 }
 
 export default Breadcrumbs

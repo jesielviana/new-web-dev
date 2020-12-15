@@ -14,7 +14,7 @@ const FeedbackPage = () => {
     window.location = FEEDBACK_ROUTE
   }
 
-  return <React.Fragment />
+  return <></>
 }
 
 export default FeedbackPage

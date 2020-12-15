@@ -4,23 +4,23 @@ import PropTypes from 'prop-types'
 import SEO from '../../components/seo'
 import Layout from '../Layout'
 import { BtnLink } from '../../components'
-
+/* eslint-disable react/jsx-pascal-case */
 const NotPublished = ({ location }) => (
   <Layout location={location}>
-    <SEO title="Not Published" />
+    <SEO title='Not Published' />
     <h1>Not Published</h1>
     <p>
       This content is not available yet. It will be published as the course
       progresses.
     </p>
-    <BtnLink to="/">Back to home</BtnLink>
+    <BtnLink to='/'>Back to home</BtnLink>
   </Layout>
 )
 
 NotPublished.propTypes = {
   location: PropTypes.shape({
-    pathname: PropTypes.string,
-  }).isRequired,
+    pathname: PropTypes.string
+  }).isRequired
 }
 
 export default NotPublished

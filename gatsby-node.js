@@ -12,8 +12,8 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   // Import react components used as templates for rendering pages
-  const MDTemplate = path.resolve(`src/templates/Markdown.js`)
-  const MDXTemplate = path.resolve(`src/templates/MDX.js`)
+  const MDTemplate = path.resolve('src/templates/Markdown.js')
+  const MDXTemplate = path.resolve('src/templates/MDX.js')
 
   return graphql(`
     {
@@ -48,15 +48,15 @@ exports.createPages = ({ actions, graphql }) => {
     const {
       data: {
         allMdx: { edges: mdxPages },
-        allMarkdownRemark: { edges: mdPages },
-      },
+        allMarkdownRemark: { edges: mdPages }
+      }
     } = result
 
     mdxPages.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
         component: MDXTemplate,
-        context: {},
+        context: {}
       })
     })
 
@@ -64,7 +64,7 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: MDTemplate,
-        context: {},
+        context: {}
       })
     })
   })

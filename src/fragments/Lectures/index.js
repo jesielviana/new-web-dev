@@ -48,10 +48,10 @@ export const Lectures = () => (
       // Find all lectures and readings
       const {
         allMarkdownRemark: { edges: lectures },
-        allFile: { edges: files },
+        allFile: { edges: files }
       } = data
       const {
-        node: { childrenLectureReadingJson: readings },
+        node: { childrenLectureReadingJson: readings }
       } = files[0]
 
       // Find all readings for the passed in lecture number
@@ -66,7 +66,7 @@ export const Lectures = () => (
 
         return filteredReadings.map(({ name, url }) => (
           <div key={url}>
-            <a href={url} target="_BLANK" rel="noopener noreferrer">
+            <a href={url} target='_BLANK' rel='noopener noreferrer'>
               {name}
             </a>
           </div>
@@ -80,7 +80,7 @@ export const Lectures = () => (
               <tr>
                 <th>#</th>
                 <th>Name</th>
-                <th>{'Reading & Resources'}</th>
+                <th>Reading & Resources</th>
               </tr>
             </thead>
 
@@ -88,8 +88,8 @@ export const Lectures = () => (
               {lectures.map(l => {
                 const {
                   node: {
-                    frontmatter: { title, path, number, hidden },
-                  },
+                    frontmatter: { title, path, number, hidden }
+                  }
                 } = l
 
                 if (hidden) {

@@ -18,12 +18,12 @@ export const Code = ({ code, language, lang, js, html, bash, json }) => (
       language || lang || js
         ? 'js'
         : html
-        ? 'html'
-        : bash
-        ? 'bash'
-        : json
-        ? 'json'
-        : 'text'
+          ? 'html'
+          : bash
+            ? 'bash'
+            : json
+              ? 'json'
+              : 'text'
     }
   >
     {({ className, style, tokens, getLineProps, getTokenProps }) => (
@@ -55,7 +55,7 @@ Code.defaultProps = {
   js: false,
   html: false,
   bash: false,
-  json: false,
+  json: false
 }
 
 Code.propTypes = {
@@ -65,5 +65,5 @@ Code.propTypes = {
   js: PropTypes.bool,
   html: PropTypes.bool,
   bash: PropTypes.bool,
-  json: PropTypes.bool,
+  json: PropTypes.bool
 }

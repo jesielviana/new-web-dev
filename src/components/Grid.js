@@ -90,7 +90,7 @@ const ColWrapper = s.div`
     `}
   }
 
-  ${({ flex }) => flex && `display: flex;`}
+  ${({ flex }) => flex && 'display: flex;'}
 `
 
 const ColContainer = s.div`
@@ -109,12 +109,12 @@ export const Col = ({ margin, children, ...other }) => (
 )
 
 Col.defaultProps = {
-  margin: null,
+  margin: null
 }
 
 Col.propTypes = {
   margin: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export const ColSpace = s(Col)`

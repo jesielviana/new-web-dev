@@ -20,52 +20,52 @@ const SEO = ({ description, lang, meta, keywords, title, image }) => {
             titleTemplate={`${siteMetadata.title} | %s`}
             meta={[
               {
-                name: `description`,
-                content: metaDescription,
+                name: 'description',
+                content: metaDescription
               },
               {
-                property: `og:title`,
-                content: title || siteMetadata.title,
+                property: 'og:title',
+                content: title || siteMetadata.title
               },
               {
-                property: `og:description`,
-                content: metaDescription,
+                property: 'og:description',
+                content: metaDescription
               },
               {
-                property: `og:type`,
-                content: `website`,
+                property: 'og:type',
+                content: 'website'
               },
               {
-                property: `og:image`,
-                content: metaImage,
+                property: 'og:image',
+                content: metaImage
               },
               {
-                name: `twitter:card`,
-                content: `summary`,
+                name: 'twitter:card',
+                content: 'summary'
               },
               {
-                name: `twitter:creator`,
-                content: siteMetadata.author,
+                name: 'twitter:creator',
+                content: siteMetadata.author
               },
               {
-                name: `twitter:title`,
-                content: title,
+                name: 'twitter:title',
+                content: title
               },
               {
-                name: `twitter:description`,
-                content: metaDescription,
+                name: 'twitter:description',
+                content: metaDescription
               },
               {
-                property: `twitter:image`,
-                content: metaImage,
-              },
+                property: 'twitter:image',
+                content: metaImage
+              }
             ]
               .concat(
                 metaKeywords.length > 0
                   ? {
-                      name: `keywords`,
-                      content: metaKeywords.join(`, `),
-                    }
+                    name: 'keywords',
+                    content: metaKeywords.join(', ')
+                  }
                   : []
               )
               .concat(meta)}
@@ -77,10 +77,10 @@ const SEO = ({ description, lang, meta, keywords, title, image }) => {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: 'en',
   meta: [],
   keywords: [],
-  image: null,
+  image: null
 }
 
 SEO.propTypes = {
@@ -89,7 +89,7 @@ SEO.propTypes = {
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
-  image: PropTypes.string,
+  image: PropTypes.string
 }
 
 export default SEO

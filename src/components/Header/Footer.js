@@ -7,7 +7,7 @@ import { maxWidth, TABLET } from '../../constants/widths'
 
 const Wrapper = s.div`
   ${maxWidth(TABLET)} {
-    ${({ active }) => (active ? `max-height: 4rem;` : `max-height: 0;`)}
+    ${({ active }) => (active ? 'max-height: 4rem;' : 'max-height: 0;')}
   }
 `
 
@@ -32,5 +32,5 @@ export const Footer = ({ active }) => (
 )
 
 Footer.propTypes = {
-  active: PropTypes.bool.isRequired,
+  active: PropTypes.bool.isRequired
 }

@@ -5,10 +5,10 @@ import Layout from '../templates/Layout'
 import SEO from '../components/seo'
 import { BtnLink } from '../components'
 import { HOME_ROUTE, CONTACT_ROUTE } from '../constants/routes'
-
+/* eslint-disable react/jsx-pascal-case */
 const NotFoundPage = ({ location }) => (
   <Layout location={location}>
-    <SEO title="404: Not found" />
+    <SEO title='404: Not found' />
     <h1>Page not found</h1>
     <p>
       The page you were looking for was either moved or does not exist. If you
@@ -20,8 +20,8 @@ const NotFoundPage = ({ location }) => (
 
 NotFoundPage.propTypes = {
   location: PropTypes.shape({
-    pathname: PropTypes.string,
-  }),
+    pathname: PropTypes.string
+  })
 }
 
 export default NotFoundPage

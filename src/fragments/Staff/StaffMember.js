@@ -58,12 +58,12 @@ StaffMember.propTypes = {
   image: PropTypes.shape({
     src: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fluid: PropTypes.object,
-      }),
-    }),
+        fluid: PropTypes.object
+      })
+    })
   }).isRequired,
   email: PropTypes.string.isRequired,
-  officeHours: PropTypes.string.isRequired,
+  officeHours: PropTypes.string.isRequired
 }
 
 export default StaffMember

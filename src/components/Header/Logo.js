@@ -17,4 +17,4 @@ const Wrapper = s.img`
   }
 `
 
-export const Logo = () => <Wrapper src={logo} alt="CIS 197 Logo" />
+export const Logo = () => <Wrapper src={logo} alt='CIS 197 Logo' />

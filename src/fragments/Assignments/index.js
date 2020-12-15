@@ -26,11 +26,11 @@ export const Assignments = () => (
     `}
     render={data => {
       const {
-        allMdx: { edges: assignments },
+        allMdx: { edges: assignments }
       } = data
       const visibleAssignments = assignments.filter(({ node }) => {
         const {
-          frontmatter: { hidden },
+          frontmatter: { hidden }
         } = node
         return !hidden
       })
@@ -49,8 +49,8 @@ export const Assignments = () => (
             {visibleAssignments.map((a, idx) => {
               const {
                 node: {
-                  frontmatter: { title, path, due },
-                },
+                  frontmatter: { title, path, due }
+                }
               } = a
 
               return (

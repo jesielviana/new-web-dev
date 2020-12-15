@@ -9,6 +9,7 @@ import Lecture from './Lecture'
 import { GRAY } from '../constants/colors'
 import NotPublished from './shared/NotPublished'
 
+/* eslint-disable react/jsx-pascal-case */
 const Timestamp = s.p`
   color: ${GRAY};
   opacity: 0.8;
@@ -17,7 +18,7 @@ const Timestamp = s.p`
 
 const MarkdownTemplate = ({ data, location }) => {
   const {
-    markdownRemark: { frontmatter, html },
+    markdownRemark: { frontmatter, html }
   } = data
 
   const { title, date, hidden } = frontmatter
@@ -37,7 +38,6 @@ const MarkdownTemplate = ({ data, location }) => {
       </>
     )
   }
-
   // Generic markdown page
   return (
     <Layout location={location}>
@@ -51,7 +51,7 @@ const MarkdownTemplate = ({ data, location }) => {
 
 MarkdownTemplate.propTypes = {
   location: PropTypes.shape({
-    pathname: PropTypes.string,
+    pathname: PropTypes.string
   }),
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
@@ -59,11 +59,11 @@ MarkdownTemplate.propTypes = {
         date: PropTypes.string,
         path: PropTypes.string,
         title: PropTypes.string,
-        hidden: PropTypes.bool,
+        hidden: PropTypes.bool
       }),
-      html: PropTypes.string,
-    }),
-  }),
+      html: PropTypes.string
+    })
+  })
 }
 
 export const pageQuery = graphql`

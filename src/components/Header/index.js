@@ -12,7 +12,7 @@ import { Bars } from './Bars'
 
 const Z_INDEX = 1300
 const MOBILE_NAV_HEIGHT = '53px'
-
+/* eslint-disable react/jsx-handler-names */
 const Shade = s.div`
   display: none;
 
@@ -78,18 +78,18 @@ const LogoText = s(Link)`
 `
 
 class Header extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = { active: false }
     this.toggle = this.toggle.bind(this)
   }
 
-  toggle() {
+  toggle () {
     const { active } = this.state
     this.setState({ active: !active })
   }
 
-  render() {
+  render () {
     const { siteTitle } = this.props
     const { active } = this.state
 
@@ -100,7 +100,7 @@ class Header extends Component {
 
           <Bars handleClick={this.toggle} />
 
-          <LogoText to="/">{siteTitle}</LogoText>
+          <LogoText to='/'>{siteTitle}</LogoText>
 
           <Links active={active} />
 
@@ -116,11 +116,11 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: ''
 }
 
 export default Header

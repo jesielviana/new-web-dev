@@ -11,7 +11,7 @@ import logo from '../images/logo.svg'
 
 const LEFT_KEY_CODE = 37
 const RIGHT_KEY_CODE = 39
-
+/* eslint-disable react/jsx-handler-names */
 const Wrapper = s.div`
   ${sharedStyles}
 
@@ -157,7 +157,7 @@ const SlideCount = s.p`
 const parseClass = str => {
   const re = /^<p>class:.*?<\/p>/
 
-  let trimStr = str.trim()
+  const trimStr = str.trim()
 
   try {
     const res = re.exec(`${trimStr}`)
@@ -166,18 +166,18 @@ const parseClass = str => {
     const content = pTag.substring(pTag.indexOf(':') + 1, pTag.indexOf('</p>'))
     return {
       className: content.replace(/,/g, '').trim(),
-      content: trimStr.split(re)[1],
+      content: trimStr.split(re)[1]
     }
   } catch (err) {
     return {
       className: '',
-      content: trimStr,
+      content: trimStr
     }
   }
 }
 
 class Lecture extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
 
     /**
@@ -191,11 +191,11 @@ class Lecture extends Component {
       slide: 0,
       displaySlide: 0,
       slides,
-      hidden: false,
+      hidden: false
     }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.matchStateToURL()
 
     document.onkeydown = event => {
@@ -211,45 +211,45 @@ class Lecture extends Component {
     }
   }
 
-  componentDidUpdate() {
+  componentDidUpdate () {
     this.matchStateToURL()
   }
 
-  matchStateToURL() {
+  matchStateToURL () {
     const { location: { hash } = { hash: '#0' } } = this.props
     const id = Number(hash.substring(1))
 
     const { slide } = this.state
     if (slide !== id) {
       this.setState({
-        slide: id,
+        slide: id
       })
     }
   }
 
-  prevValid() {
+  prevValid () {
     const { slide } = this.state
     return slide > 0
   }
 
-  nextValid() {
+  nextValid () {
     const { slide, slides } = this.state
     return slide < slides.length - 1
   }
 
-  next() {
+  next () {
     const { slide } = this.state
     if (!this.nextValid()) return
     window.location.hash = slide + 1
   }
 
-  prev() {
+  prev () {
     const { slide } = this.state
     if (!this.prevValid()) return
     window.location.hash = slide - 1
   }
 
-  render() {
+  render () {
     const { slides, slide } = this.state
     const html = slides[slide]
     const numSlides = slides.length
@@ -259,7 +259,7 @@ class Lecture extends Component {
     return (
       <>
         <LogoLink to={HOME_ROUTE}>
-          <img src={logo} alt="CIS 197: JavaScript" />
+          <img src={logo} alt='CIS 197: JavaScript' />
         </LogoLink>
         <Wrapper>
           <div
@@ -284,8 +284,8 @@ class Lecture extends Component {
 Lecture.propTypes = {
   html: PropTypes.string.isRequired,
   location: PropTypes.shape({
-    hash: PropTypes.string,
-  }).isRequired,
+    hash: PropTypes.string
+  }).isRequired
 }
 
 export default Lecture

@@ -13,16 +13,16 @@ const INFO = 'info'
 const typeColorMap = {
   [ERROR]: {
     bg: PINK,
-    color: RED,
+    color: RED
   },
   [WARN]: {
     bg: POLLEN,
-    color: GOLD,
+    color: GOLD
   },
   [INFO]: {
     bg: SKY,
-    color: BLUE,
-  },
+    color: BLUE
+  }
 }
 
 const getTypeStyles = type => {
@@ -105,14 +105,14 @@ const defaultPropsInterface = {
   message: null,
   children: null,
   bordered: false,
-  showIcon: false,
+  showIcon: false
 }
 
 const propsInterface = {
   message: PropTypes.string,
   bordered: PropTypes.bool,
   showIcon: PropTypes.bool,
-  children: PropTypes.node,
+  children: PropTypes.node
 }
 
 ErrorMessage.propTypes = propsInterface

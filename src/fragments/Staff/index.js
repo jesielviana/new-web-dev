@@ -38,11 +38,11 @@ export const Staff = () => (
     `}
     render={data => {
       const {
-        node: { childrenStaffJson: staff },
+        node: { childrenStaffJson: staff }
       } = data.allFile.edges[0]
 
       return (
-        <Row margin={MARGIN} justify="start">
+        <Row margin={MARGIN} justify='start'>
           {staff.map(s => (
             <StaffMember margin={MARGIN} key={s.name} {...s} />
           ))}

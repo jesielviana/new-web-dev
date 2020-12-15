@@ -18,7 +18,7 @@ const Timestamp = s.p`
 
 const MDXTemplate = ({ data, location }) => {
   const {
-    mdx: { frontmatter, body },
+    mdx: { frontmatter, body }
   } = data
 
   const { title, date, metaTitle, due, hidden, hasZip } = frontmatter
@@ -39,7 +39,7 @@ const MDXTemplate = ({ data, location }) => {
       </p>
     )
   }
-
+  /* eslint-disable react/jsx-pascal-case */
   return (
     <Layout location={location}>
       <SEO title={metaTitle || title} />
@@ -58,7 +58,7 @@ const MDXTemplate = ({ data, location }) => {
 
 MDXTemplate.propTypes = {
   location: PropTypes.shape({
-    pathname: PropTypes.string,
+    pathname: PropTypes.string
   }).isRequired,
   data: PropTypes.shape({
     mdx: PropTypes.shape({
@@ -70,10 +70,10 @@ MDXTemplate.propTypes = {
         hasZip: PropTypes.bool,
         title: PropTypes.string,
         metaTitle: PropTypes.string,
-        hidden: PropTypes.bool,
-      }),
-    }),
-  }).isRequired,
+        hidden: PropTypes.bool
+      })
+    })
+  }).isRequired
 }
 
 export const pageQuery = graphql`

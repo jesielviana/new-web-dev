@@ -12,7 +12,7 @@ import {
   STAFF_ROUTE,
   STYLE_ROUTE,
   DEVELOPMENT_ROUTE,
-  CAMPUS_WIRE_ROUTE,
+  CAMPUS_WIRE_ROUTE
 } from '../../constants/routes'
 import { GRAY, DARK_GRAY } from '../../constants/colors'
 
@@ -76,12 +76,12 @@ export const Links = ({ active }) => (
     <InternalLink to={STAFF_ROUTE}>Staff</InternalLink>
     <InternalLink to={STYLE_ROUTE}>Style</InternalLink>
     <InternalLink to={DEVELOPMENT_ROUTE}>Getting Started</InternalLink>
-    <ExternalLink href={CAMPUS_WIRE_ROUTE} target="_BLANK">
+    <ExternalLink href={CAMPUS_WIRE_ROUTE} target='_BLANK'>
       Campuswire
     </ExternalLink>
   </LinksDiv>
 )
 
 Links.propTypes = {
-  active: PropTypes.bool.isRequired,
+  active: PropTypes.bool.isRequired
 }

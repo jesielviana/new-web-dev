@@ -4,12 +4,12 @@ import PropTypes from 'prop-types'
 import Layout from '../templates/Layout'
 import SEO from '../components/seo'
 import { Staff } from '../fragments'
-
+/* eslint-disable react/jsx-pascal-case */
 const StaffPage = ({ location }) => (
   <Layout location={location}>
     <SEO
-      title="Staff"
-      description="Course staff for CIS 197: JavaScript at the University of Pennsylvania"
+      title='Staff'
+      description='Course staff for CIS 197: JavaScript at the University of Pennsylvania'
     />
     <h1>Course Staff</h1>
     <Staff />
@@ -18,8 +18,8 @@ const StaffPage = ({ location }) => (
 
 StaffPage.propTypes = {
   location: PropTypes.shape({
-    pathname: PropTypes.string,
-  }),
+    pathname: PropTypes.string
+  })
 }
 
 export default StaffPage
