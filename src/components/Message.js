@@ -80,13 +80,11 @@ const messageGenerator = type => ({
     <Wrapper type={type} {...props}>
       {showIcon && (
         <IconWrapper color={color}>
-          {type === ERROR ? (
-            <AlertTriangleIcon />
-          ) : type === WARN ? (
-            <AlertCircleIcon />
-          ) : (
-            <InfoIcon />
-          )}
+          {type === ERROR
+            ? (<AlertTriangleIcon />)
+            : type === WARN
+              ? (<AlertCircleIcon />)
+              : (<InfoIcon />)}
         </IconWrapper>
       )}
       <TextWrapper>

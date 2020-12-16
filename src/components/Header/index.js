@@ -31,6 +31,7 @@ const Shade = s.div`
 const Nav = s.nav`
   position: fixed;
   width: 20%;
+  max-width: 13rem;
   padding: calc(1rem + 2.5%) 1rem;
   border-right: 1px solid ${BORDER};
   min-height: 100vh;
@@ -53,6 +54,7 @@ const Nav = s.nav`
 
 const NavSpacer = s.div`
   width: 20%;
+  max-width: 13rem;
 
   ${maxWidth(TABLET)} {
     width: 100%;
@@ -63,6 +65,7 @@ const NavSpacer = s.div`
 const LogoText = s(Link)`
   color: ${BLACK} !important;
   text-decoration: none !important;
+  font-family: 'Fredoka One', cursive;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;

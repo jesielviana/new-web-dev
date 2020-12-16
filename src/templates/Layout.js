@@ -21,7 +21,7 @@ const Wrapper = s.div`
 
 const Content = s.div`
   flex: 1;
-  padding: calc(1rem + 2.5%) calc(5% + 1rem);
+  padding: calc(1rem + 1.5%) calc(3% + 1rem);
   min-height: calc(100vh - 60px);
   display: block;
   box-sizing: border-box;

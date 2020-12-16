@@ -44,7 +44,7 @@ const MDXTemplate = ({ data, location }) => {
     <Layout location={location}>
       <SEO title={metaTitle || title} />
       <h1>{title}</h1>
-      {date && <Timestamp>Last updated: {date}</Timestamp>}
+      {date && <Timestamp>Última atualização: {date}</Timestamp>}
       {due && (
         <p>
           Due <strong>{due}, 11:59:59pm</strong>.
@@ -81,7 +81,7 @@ export const pageQuery = graphql`
     mdx(frontmatter: { path: { eq: $path } }) {
       body
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD/MM/YYYY")
         due(formatString: "dddd, MMMM DD, YYYY")
         path
         hasZip

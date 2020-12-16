@@ -5,7 +5,7 @@ import logo from '../../images/webpage.svg'
 import { maxWidth, TABLET } from '../../constants/widths'
 
 const Wrapper = s.img`
-  width: 3.5rem;
+  width: 5rem;
   height: auto;
 
   ${maxWidth(TABLET)} {

@@ -17,7 +17,7 @@ export const Assignments = () => (
                 path
                 title
                 hidden
-                due(formatString: "MMMM DD, YYYY")
+                due(formatString: "DD/MM/YYYY")
               }
             }
           }
@@ -59,7 +59,7 @@ export const Assignments = () => (
                   <td>
                     <Link to={path}>{title}</Link>
                   </td>
-                  <td>{due ? `${due}, 11:59:59PM` : ''}</td>
+                  <td>{due ? `${due}, 23:59:59` : ''}</td>
                 </tr>
               )
             })}

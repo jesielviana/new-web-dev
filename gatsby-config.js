@@ -4,16 +4,7 @@ module.exports = {
     title: 'Web Dev',
     description: `Curso de Programação para Web do IFPI Campus Picos.`, // eslint-disable-line
     author: 'Jesiel Viana <jesiel@ifpi.edu.br>',
-    keywords: [
-      'web',
-      'js',
-      'html',
-      'css',
-      'ifpi',
-      'script',
-      'http',
-      'ensino'
-    ],
+    keywords: ['web', 'js', 'html', 'css', 'ifpi', 'script', 'http', 'ensino'],
     image: 'https://s3.amazonaws.com/riploventures/cis197-bg.png'
   },
   plugins: [
@@ -29,7 +20,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/markdown`,
+        path: `${__dirname}/src/markdown`, // eslint-disable-line
         name: 'markdown'
       }
     },
@@ -37,7 +28,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/json`,
+        path: `${__dirname}/src/json`, // eslint-disable-line
         name: 'json'
       }
     },

@@ -2,7 +2,7 @@
 path: '/'
 date: '2020-01-13'
 metaTitle: 'JavaScript'
-title: 'CIS 197: JavaScript (Spring 2020)'
+title: 'Programação para Web'
 ---
 
 import { FEEDBACK_ROUTE } from '../constants/routes'
@@ -14,58 +14,56 @@ import { InfoMessage, BtnAnchor } from '../components'
   This course meets Thursdays from 3:00pm to 4:30pm. Location Towne 303.
 </InfoMessage>
 
-This course provides an introduction to modern JavaScript: frameworks, design patterns, techniques, and best practices used to create robust applications both server-side and client-side. The emphasis will be on sampling a wide range of JavaScript use cases. The topics covered will include:
+Este curso apresentará conceitos fundamentais da Web e como utilizar as tecnologias básicas da Web (HTML, CSS e Javascript) para criação de aplicativos. No decorrer do curso o aluno vai ver como os conceitos fundamentais do desenvolvimento da Web podem ser aplicados para desenvolver software da Web real, independentemente das tecnologias, idiomas ou estruturas. Embora enfatizemos os conceitos, você demonstrará sua competência no desenvolvimento da Web desenvolvendo software dinâmico da Web com as tecnologias de programação mais comumente usadas.
 
-- JavaScript language
-- Web browser internals, the Document Object Model (DOM), jQuery, HTTP requests
-- Webkit developer tools & JS debugging
-- MV\* frameworks (ReactJS)
-- Client-side app architecture, modular JS development & best practices
-- Server-side app architecture (with ExpressJS), middleware, and RESTful API design
-- JS history and universe
-- What does _good_ JavaScript look like?
+Você trabalhará no design da interface do usuário e no desenvolvimento de front-end de aplicações Web responsivas, Além disso, você irá atuar na implantação dessas aplicações em ambientes online, tornando sua aplicações disponíveis para qualquer um acessar.
 
-This course is most useful for students who have some programming and web development experience and want to develop moderate JavaScript skills to be able to build complex, interactive applications.
+Durante o semestre, você trabalhará em cada tarefa de programação com no mínimo um parceiro. Cada tarefa será uma etapa na criação de um aplicativo da web. Você poderá escolher o que criar, com a atribuição restringindo os recursos que devem ser usados. Até o final do semestre, você terá construído no mínimo um aplicativo da web estático. Com grande parte do processo que envolve trabalho em equipe, habilidades interpessoais e gerenciamento de conflitos e gerenciamento de tempo, este curso o ajudará a praticar e se preparar para o seu desenvolvimento profissional.
 
-There are many, many JS frameworks (far more than we can cover in this course). Our goal is to teach relevant frameworks and concepts which will enable you to pick up any other framework upon completing the course.
+Após concluir este curso, você entenderá e poderá projetar interfaces gráficas de usuário utilizáveis ​​e implementá-las na Web utilizando HTML, CSS e Javascript.
 
 ---
 
-### Prerequisites
+### Objetivos de Aprendizagem
 
-- CIS 120 or equivalent (or permission of instructor).
-- Some knowledge of HTML/CSS (if you don't meet this requirement, you are expected to pick up the basics on your own with online resources like [Codecademy](http://codecademy.com/) and [Mozilla Developer Network](https://developer.mozilla.org/en-US/)).
-
----
-
-### Policies
-
-Homework will be graded out of 25 points: 15 for correctness (automatically graded), 5 for JavaScript best practices (automatically graded), and 5 for code style (manually graded). Grading will follow the [style guide for the course](/style) - please ask on Piazza if you have a specific question that is not covered here.
-
-Please note that the code style grade is additive, not subtractive; if you do not complete a homework, you will not receive 5 style points for ‘making no errors,’ but rather 0 style points for writing no code at all.
-
-You have two **free** late days to use throughout the course. After this, late submissions will be docked **20%** for every day late. Additional extensions will _**only**_ be granted in truly extenuating circumstances.
-
-If a submission doesn't run (i.e. has syntax errors), we will not be lenient -- you will likely receive zero credit. Please start assignments early and use office hours to your advantage.
-
-**See the [course syllabus](/syllabus) for more detailed policies and grading info.**
+- Compreender o funcionamento da Web e demonstrar um entendimento do modelo cliente-servidor;
+- Desenvolver software da Web usando tecnologias específicas, incluindo HTML, CSS e Javascript.
+- Desenvolver habilidades e técnicas para criar interfaces de páginas Web e perceber que a usabilidade é um dos mais importante aspectos de uma aplicação Web, sendo em muitos casos o principal fator que leva ao sucesso do produto;
+- Desenvolver habilidades técnicas para construção de soluções de acordo com os requisitos do cliente e os critérios de avaliação de usabilidade e acessibilidade;
+- Desenvolver habilidades de trabalho em equipe, para que possa colaborar profissionalmente com seu parceiro de projeto contribuindo para o sucesso do mesmo.
 
 ---
 
-### Logistics
+### Pré-requisitos
 
-We use CampusWire instead of Piazza for asking questions and sharing updates about the course. You can join [here](https://campuswire.com/c/G35F55F77/feed).
-
-Homeworks are submitted to Gradescope with course code MN533B. You can submit an unlimited number of times. The majority of homeworks have automated test cases which run immedaitely after you submit, allowing you to check your work.
-
-All 19x courses have a shared "lecture" which meets for the first three weeks at the start of the semester and does not meet after. The "recitation" as listed in PennInTouch is the actual course. This meets once a week throughout the entire semester.
-
+- Conhecimento básico em algoritmos e estrutura de dados;
+- Noções de comandos básicos do terminal linux/windows/mac;
+- Noções básicas de redes de computadores.
 ---
 
-### Feedback
 
-Please let us know how we can improve the course!
+### Setup
+- Computador 
+- Navegador Web (<a href="https://brave.com/" target="_blank">Brave</a>, 
+<a href="https://www.google.com/intl/pt-BR/chrome/" target="_blank">Chrome</a>, <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>, etc)
+- Editor de código (<a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code - VS Code</a>);
+- Instalar o pacote de extensões <a href="https://marketplace.visualstudio.com/items?itemName=jesielviana.web-dev-extension-pack" target="_blank">Web Dev Extension Pack</a> no seu VS Code;
+- <a href="https://git-scm.com/" target="_blank">Git</a> e <a href="https://github.com/" target="_blank">Github</a>
+---
 
-<BtnAnchor href={FEEDBACK_ROUTE} target="_BLANK">
-  Feedback Form
-</BtnAnchor>
+
+### Estilo de Código e Padrões Web
+- Todo código **HTML** de qualquer atividade ou projeto deverá
+ seguir o padrão [HTML Style Guide and Coding Conventions](https://www.w3schools.com/html/html5_syntax.asp);
+- Todo código **Javascript** de qualquer atividade ou projeto deverá
+ seguir o padrão [JavaScript Standard Style](https://standardjs.com/);
+- No início do curso leia (obrigatoriamente) o artigo 
+[A web e seus padrões](https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/A_web_e_seus_padr%C3%B5es).
+---
+
+### Avaliação
+- Atividades individuais: 20%
+- Participação em aulas, fóruns e aplicativos de mensagens : 20%
+- Projeto:  60% (A avaliação do projeto será baseada no resultado final alcançado levando em consideração os aspectos técnicos e interpessoais de cada aluno e do grupo como um todo)
+- Avaliação Final (Prática): 100%
+
