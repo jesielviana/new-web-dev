@@ -63,9 +63,9 @@ const SEO = ({ description, lang, meta, keywords, title, image }) => {
               .concat(
                 metaKeywords.length > 0
                   ? {
-                    name: 'keywords',
-                    content: metaKeywords.join(', ')
-                  }
+                      name: 'keywords',
+                      content: metaKeywords.join(', ')
+                    }
                   : []
               )
               .concat(meta)}

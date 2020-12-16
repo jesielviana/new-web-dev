@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import s from 'styled-components'
 
-import { BORDER, BLACK, WHITE } from '../../constants/colors'
+import { BORDER, DARK_NAVY, WHITE } from '../../constants/colors'
 import { maxWidth, TABLET } from '../../constants/widths'
 import { Logo } from './Logo'
 import { Links } from './Links'
@@ -40,6 +40,7 @@ const Nav = s.nav`
 
   ${maxWidth(TABLET)} {
     width: 100%;
+    max-width: 100%;
     padding: 0.5rem 1rem;
     border-right: 0;
     border-bottom: 1px solid ${BORDER};
@@ -58,12 +59,13 @@ const NavSpacer = s.div`
 
   ${maxWidth(TABLET)} {
     width: 100%;
+    max-width: 100%;
     height: ${MOBILE_NAV_HEIGHT};
   }
 `
 
 const LogoText = s(Link)`
-  color: ${BLACK} !important;
+  color: ${DARK_NAVY} !important;
   text-decoration: none !important;
   font-family: 'Fredoka One', cursive;
   font-size: 2rem;

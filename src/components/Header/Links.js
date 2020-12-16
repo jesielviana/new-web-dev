@@ -14,24 +14,24 @@ import {
   DEVELOPMENT_ROUTE,
   CAMPUS_WIRE_ROUTE
 } from '../../constants/routes'
-import { GRAY, DARK_GRAY } from '../../constants/colors'
+import { NAVY, DARK_NAVY } from '../../constants/colors'
 
 const styles = `
   width: 100%;
-  color: ${GRAY};
+  color: ${NAVY};
   text-decoration: none !important;
   width: 100%;
   display: block;
   padding: 0.5rem 0;
 
   :visited {
-    color: ${GRAY};
+    color: ${NAVY};
   }
 
   :active,
   :focus,
   :hover {
-    color: ${DARK_GRAY};
+    color: ${DARK_NAVY};
 
     ${minWidth(TABLET)} {
       ::after {

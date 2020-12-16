@@ -9,6 +9,7 @@ export const BORDER = 'rgba(0, 0, 0, 0.1)'
 export const SKY = '#e6f2ff'
 export const BLUE = '#1f6dc4'
 export const NAVY = '#19508e'
+export const DARK_NAVY = '#133d6c'
 export const MIDNIGHT = '#0c417c'
 
 // Yellows
