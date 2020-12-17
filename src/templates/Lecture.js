@@ -57,6 +57,16 @@ const Wrapper = s.div`
     width: 100%;
   }
 
+  li {
+    margin-bottom: calc(2rem / 2);
+    line-height: 1.6rem;
+
+    ${maxWidth(PHONE)} {
+      margin-bottom: calc(1.45rem / 2);
+      line-height: 1.2;
+    }
+  }
+
   .center {
     text-align: center;
   }

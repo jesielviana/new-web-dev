@@ -22,8 +22,6 @@ class: center, middle, block-text
 
 ---
 
-class: large
-
 # Objetivos de Aprendizagem
 
 - Compreender o funcionamento básico da Web;
@@ -33,8 +31,6 @@ class: large
 - Desenvolver habilidades de comunicação e trabalho em equipe em projetos de software.
 
 ---
-
-class: medium
 
 # Conteúdo Programático
 
