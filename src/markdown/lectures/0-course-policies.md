@@ -2,45 +2,53 @@
 number: 0
 path: '/lectures/0-course-policies'
 date: '2020-01-15'
-title: 'Course Policies'
+title: 'Apresentação do Curso'
 hidden: false
 ---
 
 class: center, middle, block-text
 
-# Lecture 0
+# Aula 0
 
-## Course Policies
-
----
-
-class: x-large
-
-# Philosophy
-
-It's easy to write bad JavaScript. We're going to learn _good_ JavaScript. So this class will not be easy, but it will be rewarding if you want to learn this language.
-
----
-
-class: large
-
-# Prerequisites
-
-- CIS 120 (or instructor permission)
-- Basic HTML/CSS knowledge
-  - Check out [Codecademy](http://www.codecademy.com/) or the [Mozilla Developer Network](https://developer.mozilla.org/en-US/) if you're rusty.
-- If you do not have these prerequisites - please speak with me about getting caught up!
+## Apresentação
 
 ---
 
 class: x-large
 
-# Course Structure
+# Pré-requisitos
 
-- 8-9 homework assignments
-- Final project
-- Weekly lecture (listed as a recitation)
-  - Listed "lecture" is optional **only if you already know the topic**
+- Conhecimento básico em algoritmos e estrutura de dados;
+- Noções de comandos básicos do terminal linux/windows/mac;
+- Noções básicas de redes de computadores.
+
+---
+
+class: x-large
+
+# Objetivos de Aprendizagem
+
+- Compreender o funcionamento básico da Web;
+- Desenvolver software da Web usando HTML, CSS e Javascript.
+- Desenvolver habilidades e técnicas para criar interfaces de páginas Web responsivas com boa usabilidade;
+- Desenvolver habilidades técnicas para construção de soluções de acordo com os requisitos do cliente;
+- Desenvolver habilidades de comunicação e trabalho em equipe em projetos de software.
+
+---
+
+class: x-large
+
+# Conteúdo Programático
+
+1. Introdução aos conceitos de Internet e Web;
+1. Linguagens de Marcação - HTML;
+1. Fundamentos de folhas de estilo - CSS;
+1. Princípios de Design responsivo;
+1. Usabilidade na Web;
+1. Javascrip do lado cliente;
+1. Integração com APIs;
+1. Testes automatizados; e
+1. Implantação automatizada.
 
 ---
 
