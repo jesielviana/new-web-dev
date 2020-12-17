@@ -13,6 +13,13 @@ const LEFT_KEY_CODE = 'ArrowLeft'
 const RIGHT_KEY_CODE = 'ArrowRight'
 const P_CODE = 'KeyP'
 /* eslint-disable react/jsx-handler-names */
+const Header = s.div`
+  background-color: #fff;
+  height: 3.1rem;
+  position: fixed;
+  width: 100%;
+`
+
 const Wrapper = s.div`
   ${sharedStyles}
 
@@ -20,6 +27,15 @@ const Wrapper = s.div`
   height: 100vh;
   width: 100%;
   padding: calc(1rem + 5%) calc(1rem + 20%);
+  font-size: 1.5rem;
+  overflow: auto;
+
+  h1 {
+    font-size: 2.5rem;
+    ${maxWidth(PHONE)} {
+      font-size: 1.8rem;
+    }
+  }
 
   h1,
   h2,
@@ -58,17 +74,25 @@ const Wrapper = s.div`
     }
   }
 
-  .x-large {
+  .large {
     h1 {
       font-size: 3rem;
+      ${maxWidth(PHONE)} {
+        font-size: 2rem;
+      }
     }
-
-    font-size: 140%;
+    font-size: 120%;
     line-height: 1.15;
   }
 
-  .large {
-    font-size: 120%;
+  .medium {
+    h1 {
+      font-size: 2rem;
+      ${maxWidth(PHONE)} {
+        font-size: 1.5rem;
+      }
+    }
+    font-size: 100%;
     line-height: 1.5;
   }
 
@@ -78,8 +102,8 @@ const Wrapper = s.div`
   }
 
   ${maxWidth(PHONE)} {
-    padding: 1rem;
-    font-size: 80%;
+    padding: 5rem 1rem 1rem 1rem;
+    font-size: 100%;
   }
 `
 
@@ -117,7 +141,7 @@ const Autor = s.a`
   ${maxWidth(PHONE)} {
     top: 1rem;
     right: 1rem;
-    width: 1.5rem;
+    // width: 1.5rem;
   }
 
   img {
@@ -346,12 +370,14 @@ class Lecture extends Component {
 
     return (
       <>
-        <LogoLink to={HOME_ROUTE}>
-          <img src={logo} alt='Web Dev' />
-        </LogoLink>
-        <Autor href={TEACHER_HOME} target='_BLANK'>
-          @jesielviana
-        </Autor>
+        <Header>
+          <LogoLink to={HOME_ROUTE}>
+            <img src={logo} alt='Web Dev' />
+          </LogoLink>
+          <Autor href={TEACHER_HOME} target='_BLANK'>
+            @jesielviana
+          </Autor>
+        </Header>
         <Wrapper>
           <div
             className={className}

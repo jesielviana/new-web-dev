@@ -14,8 +14,6 @@ class: center, middle, block-text
 
 ---
 
-class: x-large
-
 # Pré-requisitos
 
 - Conhecimento básico em algoritmos e estrutura de dados;
@@ -24,7 +22,7 @@ class: x-large
 
 ---
 
-class: x-large
+class: large
 
 # Objetivos de Aprendizagem
 
@@ -36,7 +34,7 @@ class: x-large
 
 ---
 
-class: x-large
+class: medium
 
 # Conteúdo Programático
 
@@ -52,8 +50,6 @@ class: x-large
 
 ---
 
-class: x-large
-
 # What You'll Learn
 
 - JavaScript basics and syntax
@@ -65,8 +61,6 @@ class: x-large
 - Chrome Extensions? D3js? GraphQL?
 
 ---
-
-class: med-large
 
 # Homeworks
 
@@ -83,8 +77,6 @@ class: med-large
 Style grades are **addititive**, not **subtractive**; an incomplete assignment is worth zero points.
 
 ---
-
-class: large
 
 ## ESLint
 
