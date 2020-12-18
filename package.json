@@ -53,13 +53,12 @@
     "standard": "^16.0.3"
   },
   "keywords": [
-    "cis",
-    "197",
-    "cis197",
-    "penn",
-    "upenn",
-    "university",
-    "pennsylvania",
+    "web",
+    "ifpi",
+    "web-dev",
+    "dev",
+    "html",
+    "css",
     "js",
     "javascript",
     "react",
@@ -70,9 +69,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cis197/website"
+    "url": "https://github.com/jesielviana/new-web-dev"
   },
   "bugs": {
-    "url": "https://github.com/cis197/website/issues"
+    "url": "https://github.com/jesielviana/new-web-dev/issues"
   }
 }

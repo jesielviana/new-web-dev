@@ -83,7 +83,6 @@ Style grades are **addititive**, not **subtractive**; an incomplete assignment i
 
 ---
 
-class: large
 
 # Academic Integrity
 
@@ -96,8 +95,6 @@ class: large
 
 ---
 
-class: x-large
-
 # Grading
 
 - 70% Homework
@@ -106,15 +103,11 @@ class: x-large
 
 ---
 
-class: x-large
-
 # Campuswire
 
 Make sure that you're signed up for the [Campuswire](https://campuswire.com/c/G35F55F77/feed) for the class. You can post any questions you have here, and the course staff will be using it for communications.
 
 ---
-
-class: x-large
 
 # Canvas
 

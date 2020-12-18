@@ -9,6 +9,8 @@ import { GRAY, DARK_GRAY, LIGHT_GRAY } from '../constants/colors'
 import { HOME_ROUTE } from '../constants/routes'
 import { BORDER_RADIUS } from '../constants/widths'
 
+const HOME_DOMAIN_PATH = 'new-web-dev'
+
 const BreadcrumbsWrapper = s.div`
   display: inline-block;
   margin-bottom: 1.5rem;
@@ -73,8 +75,7 @@ const Breadcrumbs = ({ location }) => {
   const { pathname } = location
   const paths = pathname
     .split('/')
-    .filter(path => path !== '' && path !== '~cis197')
-
+    .filter(path => path !== '' && path !== HOME_DOMAIN_PATH)
   let absPath = ''
 
   return (
