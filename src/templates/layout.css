@@ -43,7 +43,7 @@ template {
   display: none;
 }
 a {
-  color: #19508e;
+  color: #2a26f2;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -52,7 +52,7 @@ a:visited,
 a:hover,
 a:focus,
 a:active {
-  color: #19508e;
+  color: #6764f6;
 }
 a:active,
 a:hover {
@@ -242,7 +242,7 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #19508e;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;

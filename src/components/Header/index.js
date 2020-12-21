@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import s from 'styled-components'
 
-import { BORDER, DARK_NAVY, WHITE } from '../../constants/colors'
+import { BORDER, PRIMARY, WHITE } from '../../constants/colors'
 import { maxWidth, TABLET } from '../../constants/widths'
 import { Logo } from './Logo'
 import { Links } from './Links'
@@ -65,7 +65,7 @@ const NavSpacer = s.div`
 `
 
 const LogoText = s(Link)`
-  color: ${DARK_NAVY} !important;
+  color: ${PRIMARY} !important;
   text-decoration: none !important;
   font-family: 'Fredoka One', cursive;
   font-size: 2rem;
