@@ -1,15 +1,13 @@
 module.exports = {
-  pathPrefix: '/',
+  pathPrefix: '/webdev/',
   siteMetadata: {
     title: 'Web Dev',
     description: `Curso de Programação para Web do IFPI Campus Picos.`, // eslint-disable-line
     author: 'Jesiel Viana <jesiel@ifpi.edu.br>',
     keywords: ['web', 'js', 'html', 'css', 'ifpi', 'script', 'http', 'ensino'],
-    image: 'https://s3.amazonaws.com/riploventures/cis197-bg.png',
-    siteUrl: 'http://webdev.jesielviana.com'
+    image: 'https://s3.amazonaws.com/riploventures/cis197-bg.png'
   },
   plugins: [
-    'gatsby-plugin-cname',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
