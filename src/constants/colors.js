@@ -12,7 +12,7 @@ export const NAVY = '#19508e'
 export const DARK_NAVY = '#5956f5'
 export const MIDNIGHT = '#0c417c'
 
-export const PRIMARY = '#6764f6'
+export const PRIMARY = '#563d7c'
 
 // Yellows
 export const GOLD = '#9F6000'
