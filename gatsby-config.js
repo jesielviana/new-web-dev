@@ -38,13 +38,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'WebDev',
+        short_name: 'WebDev',
         start_url: '/',
         background_color: '#FFFFFF',
-        theme_color: '#0c417c',
-        display: 'minimal-ui',
-        icon: 'src/images/webpage.svg' // Path is relative to site root
+        theme_color: '#573D7C',
+        display: 'standalone',
+        icon: 'src/images/icon.png' // Path is relative to site root
       }
     },
     {
