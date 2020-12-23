@@ -55,7 +55,7 @@
   "keywords": [
     "web",
     "ifpi",
-    "web-dev",
+    "webdev",
     "dev",
     "html",
     "css",
@@ -69,9 +69,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jesielviana/new-web-dev"
+    "url": "https://github.com/jesielviana/webdev"
   },
   "bugs": {
-    "url": "https://github.com/jesielviana/new-web-dev/issues"
+    "url": "https://github.com/jesielviana/webdev/issues"
   }
 }

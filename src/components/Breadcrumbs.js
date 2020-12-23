@@ -9,7 +9,7 @@ import { GRAY, DARK_GRAY, LIGHT_GRAY } from '../constants/colors'
 import { HOME_ROUTE } from '../constants/routes'
 import { BORDER_RADIUS } from '../constants/widths'
 
-const HOME_DOMAIN_PATH = 'new-web-dev'
+const HOME_DOMAIN_PATH = 'webdev'
 
 const BreadcrumbsWrapper = s.div`
   display: inline-block;
