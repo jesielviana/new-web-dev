@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   pathPrefix: '/webdev/',
   siteMetadata: {
@@ -71,6 +75,13 @@ module.exports = {
       resolve: 'gatsby-plugin-mdx',
       options: {
         plugins: ['gatsby-remark-copy-linked-files']
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: process.env.GA_TRACKING_ID
       }
     }
   ]
