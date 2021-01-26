@@ -3,7 +3,7 @@ require('dotenv').config({
 })
 
 module.exports = {
-  pathPrefix: '/webdev/',
+  pathPrefix: '/',
   siteMetadata: {
     title: 'Web Dev',
     description: `Curso de Programação para Web do IFPI Campus Picos.`, // eslint-disable-line
