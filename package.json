@@ -1,7 +1,7 @@
 {
-  "name": "website",
+  "name": "webdev",
   "private": true,
-  "description": "Website for CIS 197: JavaScript Web Development",
+  "description": "Website do Curso de Web de ADS do IFPI Picos",
   "version": "0.1.1",
   "author": "Jesiel Viana <jesiel@ifpi.edu.br>",
   "scripts": {
