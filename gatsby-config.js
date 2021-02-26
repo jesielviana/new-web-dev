@@ -6,7 +6,7 @@ require('dotenv').config({
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    title: 'Web Dev',
+    title: 'Web Dev II',
     description: `Curso de Programação para Web do IFPI Campus Picos.`, // eslint-disable-line
     author: 'Jesiel Viana <jesiel@ifpi.edu.br>',
     keywords: ['web', 'js', 'html', 'css', 'ifpi', 'script', 'http', 'ensino'],
