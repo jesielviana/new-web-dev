@@ -33,7 +33,7 @@ const AdditionalReading = () => (
 
       return (
         <Wrapper>
-          <h3>Additional Reading</h3>
+          <h3>Referências Gerais</h3>
           <ul>
             {reading.map(({ title, author, url }) => (
               <li key={title}>

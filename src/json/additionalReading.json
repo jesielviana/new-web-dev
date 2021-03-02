@@ -1,21 +1,28 @@
 [
   {
-    "title": "JavaScript: The Good Parts",
-    "author": "Douglas Crockford",
-    "url": "http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742"
+    "title": "Documentação Node.js",
+    "url": "https://nodejs.org/pt-br/docs/"
+  },
+  {
+    "title": "Express JS",
+    "url": "https://expressjs.com/pt-br/"
+  },
+  {
+    "title": "Canal do Rodrigo Branas",
+    "author": "Rodrigo Branas",
+    "url": "https://www.youtube.com/c/RodrigoBranas/playlists"
+  },
+  {
+    "title": "Express Web Framework ",
+    "url": "https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs"
   },
   {
     "title": "Eloquent JavaScript",
     "author": "Marijn Haverbeke",
-    "url": "http://eloquentjavascript.net/"
+    "url": "https://github.com/braziljs/eloquente-javascript"
   },
   {
-    "title": "Developing Backbone.js Applications (DBA)",
-    "author": "Addy Osmani",
-    "url": "http://addyosmani.github.io/backbone-fundamentals"
-  },
-  {
-    "title": "Mozilla Developer Network JS Articles",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    "title": "Mozilla Developer Network Javascript",
+    "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
   }
 ]
