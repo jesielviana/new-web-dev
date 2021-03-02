@@ -1,5 +1,5 @@
 ---
-number: 0
+number: 1
 path: '/lectures/1-apresentacao'
 date: '2021-03-02'
 title: 'Apresentação do Curso'

@@ -79,8 +79,8 @@ export const Lectures = () => (
             <thead>
               <tr>
                 <th>#</th>
-                <th>Name</th>
-                <th>Reading & Resources</th>
+                <th>Aula</th>
+                <th>Leitura & Recursos</th>
               </tr>
             </thead>
 
