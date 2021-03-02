@@ -37,12 +37,17 @@ const Wrapper = s.div`
     }
   }
 
+  h2, h3 {
+    color: #1A202C
+  }
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
+    font-family: Yanone Kaffeesatz;
     code {
       font-size: inherit;
       font-size: 80%;
@@ -59,7 +64,7 @@ const Wrapper = s.div`
 
   li {
     margin-bottom: calc(2rem / 2);
-    line-height: 1.6rem;
+    line-height: 1.8rem;
 
     ${maxWidth(PHONE)} {
       margin-bottom: calc(1.45rem / 2);
