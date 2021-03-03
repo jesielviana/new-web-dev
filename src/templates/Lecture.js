@@ -2,22 +2,26 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import s from 'styled-components'
 import PropTypes from 'prop-types'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 import sharedStyles from './sharedStyles'
 import { maxWidth, PHONE, minWidth, TABLET } from '../constants/widths'
 import { HOME_ROUTE, TEACHER_HOME } from '../constants/routes'
 import { GRAY } from '../constants/colors'
-import logo from '../images/webpage.svg'
+// import logo from '../images/webpage.svg'
+import home from '../images/home.svg'
 
 const LEFT_KEY_CODE = 'ArrowLeft'
 const RIGHT_KEY_CODE = 'ArrowRight'
 const P_CODE = 'KeyP'
 /* eslint-disable react/jsx-handler-names */
 const Header = s.div`
-  background-color: #fff;
+  background-color: var(--bg);
   height: 3.1rem;
   position: fixed;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 `
 
 const Wrapper = s.div`
@@ -149,13 +153,14 @@ const Autor = s.a`
   // width: 2rem;
   height: auto;
   top: calc(1rem + 5%);
-  right: calc(1rem + 5%);
-  margin: 0;
+  left: 50%;
+  margin-left: -3rem;
   padding: 0;
+  font-size: 1rem;
 
   ${maxWidth(PHONE)} {
-    top: 1rem;
-    right: 1rem;
+    // top: 1rem;
+    // right: 1rem;
     // width: 1.5rem;
   }
 
@@ -387,11 +392,25 @@ class Lecture extends Component {
       <>
         <Header>
           <LogoLink to={HOME_ROUTE}>
-            <img src={logo} alt='Web Dev' />
+            <img src={home} alt='Home' />
           </LogoLink>
           <Autor href={TEACHER_HOME} target='_BLANK'>
             @jesielviana
           </Autor>
+          <ThemeToggler>
+            {({ theme, toggleTheme }) => (
+              <label className='toggle-color-btn-slides'>
+                <input
+                  title={theme === 'dark' ? 'Light' : 'Dark'}
+                  className='toggle-color-mode'
+                  type='checkbox'
+                  onChange={e =>
+                    toggleTheme(e.target.checked ? 'dark' : 'light')}
+                  checked={theme === 'dark'}
+                />{' '}
+              </label>
+            )}
+          </ThemeToggler>
         </Header>
         <Wrapper>
           <div

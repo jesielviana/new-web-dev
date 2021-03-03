@@ -14,24 +14,24 @@ import {
   // DEVELOPMENT_ROUTE,
   // CAMPUS_WIRE_ROUTE
 } from '../../constants/routes'
-import { NAVY, DARK_NAVY } from '../../constants/colors'
+// import { NAVY, DARK_NAVY } from '../../constants/colors'
 
 const styles = `
   width: 100%;
-  color: ${NAVY};
+  color: var(--heading);
   text-decoration: none !important;
   width: 100%;
   display: block;
   padding: 0.5rem 0;
 
   :visited {
-    color: ${NAVY};
+    color: var(--heading);
   }
 
   :active,
   :focus,
   :hover {
-    color: ${DARK_NAVY};
+    color: var(--heading);
 
     ${minWidth(TABLET)} {
       ::after {
@@ -46,7 +46,7 @@ const LinksDiv = s.div`
   ${minWidth(TABLET)} {
     // position: absolute;
     // top: 50%;
-    padding-top: 5rem; // poucos itens
+    margin-top: 5rem; // poucos itens
     font-size: 1.2rem;
     transform: translateY(-50%);
     padding-right: 0.5rem;

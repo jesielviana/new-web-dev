@@ -1,4 +1,4 @@
-import { BORDER, LIGHT_GRAY } from '../constants/colors'
+import { BORDER } from '../constants/colors'
 
 export default `
   hr {
@@ -8,12 +8,12 @@ export default `
 
   pre {
     max-width: 100%;
-    background: ${LIGHT_GRAY} !important;
+    background: var(--bg-color);
     margin: 0;
     margin-bottom: 1.45rem;
 
     .token.operator {
-      background: ${LIGHT_GRAY} !important;
+      background: var(--bg-color);
     }
 
     ::before {
@@ -32,7 +32,7 @@ export default `
   }
 
   code {
-    background: ${LIGHT_GRAY} !important;
+    background: var(--bg-color);
     line-height: 1.45rem;
     padding: 0.1em 0.3em !important;
 
@@ -49,7 +49,7 @@ export default `
 
   tbody tr {
     :hover {
-      background: ${LIGHT_GRAY};
+      background: var(--bg-color);
     }
   }
 `

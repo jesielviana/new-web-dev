@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import s from 'styled-components'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 import './layout.css'
 
@@ -12,10 +13,12 @@ import sharedStyles from './sharedStyles'
 
 const Wrapper = s.div`
   width: 100%;
+  font-size: 1.2rem;
   display: flex;
 
   ${maxWidth(TABLET)} {
     display: block;
+    font-size: 1rem;
   }
 `
 
@@ -49,10 +52,21 @@ const Layout = ({ children, location }) => (
     render={data => (
       <Wrapper>
         <Header siteTitle={data.site.siteMetadata.title} />
-
         <Content>
           <Breadcrumbs location={location} />
-
+          <ThemeToggler>
+            {({ theme, toggleTheme }) => (
+              <label className='toggle-color-btn'>
+                <input
+                  className='toggle-color-mode'
+                  type='checkbox'
+                  onChange={e =>
+                    toggleTheme(e.target.checked ? 'dark' : 'light')}
+                  checked={theme === 'dark'}
+                />{' '}
+              </label>
+            )}
+          </ThemeToggler>
           {children}
         </Content>
       </Wrapper>

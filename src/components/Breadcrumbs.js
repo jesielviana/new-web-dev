@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 import home from '../images/home.svg'
 import chevron from '../images/chevron.svg'
-import { GRAY, DARK_GRAY, LIGHT_GRAY } from '../constants/colors'
+// import { GRAY, DARK_GRAY, LIGHT_GRAY } from '../constants/colors'
 import { HOME_ROUTE } from '../constants/routes'
 import { BORDER_RADIUS } from '../constants/widths'
 
@@ -14,20 +14,20 @@ const HOME_DOMAIN_PATH = 'webdev'
 const BreadcrumbsWrapper = s.div`
   display: inline-block;
   margin-bottom: 1.5rem;
-  background: ${LIGHT_GRAY};
+  background: var(--bg-color);
   padding: 0.5rem 0 0.5rem 1rem;
   border-radius: ${BORDER_RADIUS};
 
   a {
     margin-right: 1rem;
-    color: ${GRAY} !important;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 0.8rem;
 
     :hover,
     :focus,
     :active {
-      color: ${DARK_GRAY} !important;
+      color: var(--text-color);
       text-decoration: none;
     }
   }

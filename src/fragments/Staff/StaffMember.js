@@ -3,7 +3,7 @@ import s from 'styled-components'
 import Img from 'gatsby-image'
 import PropTypes from 'prop-types'
 
-import { LIGHT_GRAY } from '../../constants/colors'
+// import { LIGHT_GRAY } from '../../constants/colors'
 import { Col } from '../../components'
 
 const ImgWrapper = s.div`
@@ -20,7 +20,7 @@ const Email = s.p`
 `
 
 const Role = s.span`
-  background: ${LIGHT_GRAY};
+  background: var(--bg-color);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   display: inline-block;

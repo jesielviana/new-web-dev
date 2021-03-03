@@ -2,10 +2,11 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import s from 'styled-components'
+// import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
-import { BORDER, PRIMARY, WHITE } from '../../constants/colors'
+import { BORDER, WHITE } from '../../constants/colors'
 import { maxWidth, TABLET } from '../../constants/widths'
-import { Logo } from './Logo'
+// import { Logo } from './Logo'
 import { Links } from './Links'
 import { Footer } from './Footer'
 import { Bars } from './Bars'
@@ -65,7 +66,7 @@ const NavSpacer = s.div`
 `
 
 const LogoText = s(Link)`
-  color: ${PRIMARY} !important;
+  color: var(--heading) !important;
   text-decoration: none !important;
   font-family: 'Fredoka One', cursive;
   font-size: 2rem;
@@ -101,13 +102,27 @@ class Header extends Component {
     return (
       <>
         <Nav active={active}>
-          <Logo />
+          {/* <Logo /> */}
 
           <Bars handleClick={this.toggle} />
 
           <LogoText to='/'>{siteTitle}</LogoText>
 
           <Links active={active} />
+
+          {/* <ThemeToggler>
+            {({ theme, toggleTheme }) => (
+              <label>
+                <input
+                  className='toggle-color-mode'
+                  type='checkbox'
+                  onChange={e =>
+                    toggleTheme(e.target.checked ? 'dark' : 'light')}
+                  checked={theme === 'dark'}
+                />{' '}
+              </label>
+            )}
+          </ThemeToggler> */}
 
           <Footer active={active} />
         </Nav>

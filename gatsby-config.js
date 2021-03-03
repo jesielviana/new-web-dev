@@ -13,6 +13,7 @@ module.exports = {
     image: 'https://s3.amazonaws.com/riploventures/cis197-bg.png'
   },
   plugins: [
+    'gatsby-plugin-dark-mode',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
