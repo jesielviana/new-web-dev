@@ -38,53 +38,42 @@ Prof. @jesielviana
 # Conteúdo Programático
 
 1. Apresentação do Plano de Curso
-2. _Seleção dos projetos_
+2. Seleção dos Projetos
 3. Tecnologias e ferramentas de cloud para Web
 4. Técnicas de DevOps (DI e CI)
-5. Introdução a arquitetura Web
-6. Frameworks para desenvolvimento Web
-7. _Acompanhamento dos projetos_
-8. Introdução ao Node.js
-9. Web Server com Node.js
-10. Roteamento Node.js
-11. _Acompanhamento dos projetos_
+5. Introdução a arquitetura Web e frameworks Web
+6. Introdução ao Node.js
+7. Roteamento Node.js
+8. Padrões e arquitetura Node.js
+9. Programação assíncrona Node.js e validação de dados
+10. Integração com PostgreSQL
+11. Consultas e relacionamentos com o Sequelize
 
 ---
 
 # Conteúdo Programático
 
-12. Padrões e arquitetura Node.js
-13. Programação assíncrona Node.js
-14. Validação de dados
-15. _Acompanhamento dos projetos_
-16. Integração com banco de dados
-17. Integração com PostgreSQL
-18. Consultas e relacionamentos com o Sequelize
-19. Integração com MongoDB
-20. Consultas e relacionamentos com o MongoDB
-21. _Configuração DevOps do projeto_
-22. Arquitetura e design de software Node.js
-23. _Acompanhamento dos projetos_
+12. Integração com MongoDB
+13. Consultas e relacionamentos com o MongoDB
+14. Configuração DevOps do projeto
+15. Integração entre back-end e front-end para consulta
+16. Integração entre back-end e front-end para envio de dados
+17. Introdução autenticação e autorização na Web
+18. Autenticação JWT
+19. Autorização baseada no perfil
+20. Integração Web com aplicações externas
+21. Aplicações Web assíncronas em tempo real
+22. Apresentação dos projetos
 
 ---
 
-# Conteúdo Programático
+class: center, middle, large
 
-24. Integração entre back-end e front-end para consulta
-25. Integração entre back-end e front-end para envio de dados
-26. _Acompanhamento dos projetos_
-27. Introdução autenticação e autorização na Web
-28. Autenticação JWT
-29. Autorização baseada no perfil
-30. _Acompanhamento dos projetos_
-31. Integração Web com aplicações externas
-32. Aplicações Web assíncronas em tempo real
-33. _Acompanhamento dos projetos_
-34. _Apresentação dos projetos_
+# Metodologia
 
 ---
 
-# Ensino Online
+# Educação Online
 
 <img src="https://res.cloudinary.com/ifpi/image/upload/v1614718157/Princi%CC%81piosEOLenumeracao_ap5ezy.png" alt="princípios da educação online">
 
@@ -108,7 +97,7 @@ A disciplina tem como horizonte de cronograma a carga horária de 68 horas distr
 
 # Recursos Didáticos
 
-- Google Meet para gestão da turma (postagem de materiais, fóruns e algumas atividades)
+- Google Classroom para gestão da turma (postagem de materiais, fóruns e algumas atividades)
 - Github Classroom para gestão de atividades práticas e desenvolvimento do projeto;
 - Google Meet para aulas online (videoconferência)
 - Youtube para vídeo-aulas;
