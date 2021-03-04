@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import s from 'styled-components'
 import PropTypes from 'prop-types'
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 import sharedStyles from './sharedStyles'
 import { maxWidth, PHONE, minWidth, TABLET } from '../constants/widths'

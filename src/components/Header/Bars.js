@@ -3,7 +3,7 @@ import s from 'styled-components'
 import PropTypes from 'prop-types'
 
 import { minWidth, TABLET } from '../../constants/widths'
-import { BLACK } from '../../constants/colors'
+// import { BLACK } from '../../constants/colors'
 
 const Wrapper = s.div`
   padding: 10px 1rem;
@@ -32,7 +32,7 @@ const Bar = s.span`
   height: 2px;
   margin-bottom: 3px;
   display: block;
-  background: ${BLACK};
+  background: var(--text);
 
   &:first-child {
     margin-top: 3px;

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import s from 'styled-components'
 // import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
-import { BORDER, WHITE } from '../../constants/colors'
+// import { BORDER, WHITE } from '../../constants/colors'
 import { maxWidth, TABLET } from '../../constants/widths'
 // import { Logo } from './Logo'
 import { Links } from './Links'
@@ -34,7 +34,7 @@ const Nav = s.nav`
   width: 20%;
   max-width: 13rem;
   padding: calc(1rem + 2.5%) 1rem;
-  border-right: 1px solid ${BORDER};
+  border-right: 1px solid var(--divide);
   min-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -44,10 +44,10 @@ const Nav = s.nav`
     max-width: 100%;
     padding: 0.5rem 1rem;
     border-right: 0;
-    border-bottom: 1px solid ${BORDER};
+    border-bottom: 1px solid var(--divide);
     min-height: 0;
     z-index: ${Z_INDEX};
-    background: ${WHITE};
+    background: var(--bg);
     overflow-y: hidden;
 
     max-height: ${({ active }) => (active ? '100vh' : MOBILE_NAV_HEIGHT)};

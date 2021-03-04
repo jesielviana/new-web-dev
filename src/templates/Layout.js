@@ -1,8 +1,8 @@
 import React from 'react'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import s from 'styled-components'
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 import './layout.css'
 
@@ -58,6 +58,7 @@ const Layout = ({ children, location }) => (
             {({ theme, toggleTheme }) => (
               <label className='toggle-color-btn'>
                 <input
+                  title={theme === 'dark' ? 'Light' : 'Dark'}
                   className='toggle-color-mode'
                   type='checkbox'
                   onChange={e =>

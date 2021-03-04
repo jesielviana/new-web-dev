@@ -754,7 +754,7 @@ input[type='checkbox'] {
 }
 
 body {
-  --bg: white;
+  --bg: #fefefe;
   --text: #111827;
   --primary: #6d28d9;
   --secondary: #5f6c80;
