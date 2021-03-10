@@ -420,7 +420,7 @@ class Lecture extends Component {
         </Wrapper>
         <Navigation>
           <SlideCount>
-            {slide}/{numSlides - 1}
+            {slide + 1}/{numSlides - 1}
           </SlideCount>
           {this.prevValid() && (
             <NavLink onClick={() => this.prev()}>Prev</NavLink>

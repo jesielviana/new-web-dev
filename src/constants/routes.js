@@ -1,7 +1,7 @@
 // Internal routes
 export const HOME_ROUTE = '/'
 export const ASSIGNMENTS_ROUTE = '/assignments'
-export const LECTURES_ROUTE = '/lectures'
+export const LECTURES_ROUTE = '/aulas'
 export const STAFF_ROUTE = '/staff'
 export const STYLE_ROUTE = '/style'
 export const DEVELOPMENT_ROUTE = '/development'

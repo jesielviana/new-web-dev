@@ -1,12 +1,12 @@
 [
   {
-    "name": "Syllabus",
-    "url": "https://drive.google.com/open?id=1DwJdajfsy1oYJrWG3XY80T3I-TNlaJLowbS8kM2m4KY&authuser=0",
-    "lecture": 0
+    "name": "Tutorial Github Pages",
+    "url": "https://www.youtube.com/watch?v=rev0IoJdiBA",
+    "lecture": 2
   },
   {
-    "name": "Plano de curso",
-    "url": "https://drive.google.com/open?id=1DwJdajfsy1oYJrWG3XY80T3I-TNlaJLowbS8kM2m4KY&authuser=0",
-    "lecture": 0
+    "name": "Curso Netlify",
+    "url": "https://www.youtube.com/watch?v=a1cIjP1bueM&list=PLlAbYrWSYTiMGMxQf9JSoZUU1rgVpGPth",
+    "lecture": 2
   }
 ]

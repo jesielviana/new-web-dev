@@ -11,7 +11,7 @@ const LecturesPage = ({ location }) => (
       title='Aulas'
       description='Aulas do Curso de Programação para Internet II - ADS IFPI Picos'
     />
-    <h1>Lectures</h1>
+    <h1>Aulas</h1>
     <Lectures />
   </Layout>
 )
