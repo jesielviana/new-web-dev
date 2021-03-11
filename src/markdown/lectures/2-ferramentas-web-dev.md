@@ -40,10 +40,12 @@ Tenha uma IDE, Editor de Código, Cliente de BD configurados para sua produtivid
 
 # Hospedagem de Sites
 
-- [Surge.sh](https://surge.sh/)
-- [Github Pages](https://pages.github.com/)
-- [Firebase](https://firebase.google.com/)
-- [Netlify](https://www.netlify.com/)
+- [Surge.sh](https://surge.sh/) (front-end)
+- [Github Pages](https://pages.github.com/) (front-end)
+- [Firebase](https://firebase.google.com/) (front-end e back-end serverless)
+- [Netlify](https://www.netlify.com/) (front-end)
+- [Vercel](https://vercel.com/) (front-end e back-end serverless)
+- [Heroku](https://www.heroku.com/) (front-end e back-end)
 
 ---
 
@@ -51,8 +53,8 @@ Tenha uma IDE, Editor de Código, Cliente de BD configurados para sua produtivid
 
 - [Mongodb](https://www.mongodb.com/try)
 - [Firestore](https://firebase.google.com/)
-- [Elephant sql](https://www.elephantsql.com/)
-- [Clever Cloud](https://www.clever-cloud.com/en/pricing)
+- [Elephant sql](https://www.elephantsql.com/) (PostgreSQL)
+- [Clever Cloud](https://www.clever-cloud.com/en/pricing) (MongoDB, PostgreSQL, MySql, Redis, etc)
 
 ---
 
@@ -74,11 +76,12 @@ Tenha uma IDE, Editor de Código, Cliente de BD configurados para sua produtivid
 
 ---
 
-# Plataforma Cloud completa
+# Plataforma Cloud completa (front-end, back-end e database)
 
 - [AWS](https://aws.amazon.com/pt/)
 - [Azure](https://azure.microsoft.com/pt-br/)
 - [Digital Ocean](https://www.digitalocean.com/)
+- [Heroku](https://www.heroku.com/)
 - [Umbler](https://www.umbler.com/br/seja-bem-vindo?u=kqxr7v8e)
 
 ---
