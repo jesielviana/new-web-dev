@@ -1,6 +1,6 @@
 ---
-number: 2
-path: '/lectures/teste'
+number: 0
+path: '/aulas/teste'
 date: '2021-03-02'
 title: 'Teste'
 hidden: true
