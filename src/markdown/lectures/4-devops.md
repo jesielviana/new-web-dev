@@ -1,6 +1,6 @@
 ---
 number: 4
-path: '/lectures/2-ferramentas-web-dev'
+path: '/lectures/4-devops'
 date: '2021-03-02'
 title: 'Práticas DevOps'
 hidden: false
