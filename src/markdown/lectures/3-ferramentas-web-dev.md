@@ -1,8 +1,8 @@
 ---
 number: 3
 path: '/lectures/3-ferramentas-web-dev'
-date: '2021-03-02'
-title: 'Ferramentas Cloud para Web'
+date: '2021-03-10'
+title: 'Ferramentas Web Dev'
 hidden: false
 ---
 

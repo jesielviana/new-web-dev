@@ -2,7 +2,7 @@
 number: 4
 path: '/lectures/4-devops'
 date: '2021-03-02'
-title: 'Práticas DevOps'
+title: 'Práticas DevOps - CI e CD'
 hidden: false
 ---
 
