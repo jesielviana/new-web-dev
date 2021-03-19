@@ -78,6 +78,10 @@ fs.readFile('./arquivo.txt', 'utf8', (erro, conteudo) => {
 console.log('primeiro exemplo Node.js assíncrono')
 ```
 
+<a target="_blank" href="https://github.com/ifpipicos/resources/blob/main/arquivo.txt">
+arquivo.txt
+</a>
+
 ---
 
 # Leitura de arquivo de forma síncrona (bloqueante)
@@ -97,6 +101,10 @@ try {
 
 console.log('primeiro exemplo Node.js síncrono')
 ```
+
+<a target="_blank" href="https://github.com/ifpipicos/resources/blob/main/arquivo.txt">
+arquivo.txt
+</a>
 
 ---
 
