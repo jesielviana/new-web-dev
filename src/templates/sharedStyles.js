@@ -8,12 +8,12 @@ export default `
 
   pre {
     max-width: 100%;
-    background: var(--bg-color);
+    // background: var(--bg-color);
     margin: 0;
     margin-bottom: 1.45rem;
 
     .token.operator {
-      background: var(--bg-color);
+      // background: var(--bg-color);
     }
 
     ::before {
@@ -32,8 +32,8 @@ export default `
   }
 
   code {
-    background: var(--bg-color);
-    line-height: 1.45rem;
+    // background: var(--bg-color);
+    // line-height: 1.45rem;
     padding: 0.1em 0.3em !important;
 
     ::before {

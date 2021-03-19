@@ -8,5 +8,15 @@
     "name": "Curso Netlify",
     "url": "https://www.youtube.com/watch?v=a1cIjP1bueM&list=PLlAbYrWSYTiMGMxQf9JSoZUU1rgVpGPth",
     "lecture": 3
+  },
+  {
+    "name": "Construindo APIs testáveis com Node.js",
+    "url": "https://leanpub.com/construindo-apis-testaveis-com-nodejs",
+    "lecture": 6
+  },
+  {
+    "name": "Front End v. Back End",
+    "url": "https://blog.codeanalogies.com/2018/04/07/front-end-v-back-end-explained-by-waiting-tables-at-a-restaurant/",
+    "lecture": 6
   }
 ]

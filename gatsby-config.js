@@ -13,6 +13,7 @@ module.exports = {
     image: 'https://s3.amazonaws.com/riploventures/cis197-bg.png'
   },
   plugins: [
+    'gatsby-plugin-twitter',
     'gatsby-plugin-dark-mode',
     'gatsby-plugin-react-helmet',
     {
@@ -53,25 +54,25 @@ module.exports = {
         icon: 'src/images/icon.png' // Path is relative to site root
       }
     },
-    {
-      // For MD files...
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          'gatsby-remark-copy-linked-files',
-          {
-            resolve: 'gatsby-remark-prismjs',
-            options: {
-              classPrefix: 'language-',
-              inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false
-            }
-          }
-        ]
-      }
-    },
+    // {
+    //   // For MD files...
+    //   resolve: 'gatsby-transformer-remark',
+    //   options: {
+    //     plugins: [
+    //       'gatsby-remark-copy-linked-files',
+    //       {
+    //         resolve: 'gatsby-remark-prismjs',
+    //         options: {
+    //           classPrefix: 'language-',
+    //           inlineCodeMarker: null,
+    //           aliases: {},
+    //           showLineNumbers: false,
+    //           noInlineHighlight: false
+    //         }
+    //       }
+    //     ]
+    //   }
+    // },
     {
       // For MDX files...
       resolve: 'gatsby-plugin-mdx',
@@ -94,6 +95,17 @@ module.exports = {
             options: {
               maxWidth: 800,
               disableBgImage: true
+            }
+          },
+          'gatsby-remark-copy-linked-files',
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false
             }
           }
         ]

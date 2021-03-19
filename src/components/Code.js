@@ -18,12 +18,12 @@ export const Code = ({ code, language, lang, js, html, bash, json }) => (
       language || lang || js
         ? 'js'
         : html
-          ? 'html'
-          : bash
-            ? 'bash'
-            : json
-              ? 'json'
-              : 'text'
+        ? 'html'
+        : bash
+        ? 'bash'
+        : json
+        ? 'json'
+        : 'text'
     }
   >
     {({ className, style, tokens, getLineProps, getTokenProps }) => (

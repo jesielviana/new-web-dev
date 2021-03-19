@@ -407,13 +407,13 @@ pre {
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 1.45rem;
-  font-size: 0.85rem;
+  font-size: 0.9rem !important;
   line-height: 1.42;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
   overflow: auto;
   word-wrap: normal;
-  padding: 1rem;
+  padding: 1rem !important;
   overflow-y: visible;
   overflow-x: auto;
 }
@@ -548,8 +548,8 @@ li > p {
   margin-bottom: calc(1.45rem / 2);
 }
 code {
-  font-size: 0.85rem !important;
-  line-height: 1.45rem;
+  font-size: 0.9rem !important;
+  /* line-height: 1.45rem; */
 }
 kbd {
   font-size: 0.85rem;
@@ -631,6 +631,22 @@ pre tt:after {
 .token.plain {
   color: #000000;
 }
+
+code[class*='language-'],
+pre[class*='language-'] {
+  text-shadow: none;
+}
+
+.line-numbers .line-numbers-rows {
+  font-size: 0.9rem !important;
+  padding-top: 1rem !important;
+}
+
+pre[class*='language-'].line-numbers {
+  padding-left: 2.5rem !important;
+}
+
+/* fim prism */
 
 h1,
 h2,
@@ -748,7 +764,8 @@ h5 {
 .reference {
   text-align: center !important;
   font-size: 0.9rem;
-  margin-top: -1rem;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
 }
 
 input[type='checkbox'] {
