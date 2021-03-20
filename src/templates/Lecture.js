@@ -409,8 +409,7 @@ class Lecture extends Component {
                   className='toggle-color-mode'
                   type='checkbox'
                   onChange={e =>
-                    toggleTheme(e.target.checked ? 'dark' : 'light')
-                  }
+                    toggleTheme(e.target.checked ? 'dark' : 'light')}
                   checked={theme === 'dark'}
                 />{' '}
               </label>
