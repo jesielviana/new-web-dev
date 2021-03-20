@@ -640,6 +640,7 @@ pre[class*='language-'] {
 .line-numbers .line-numbers-rows {
   font-size: 0.9rem !important;
   padding-top: 1rem !important;
+  padding-left: 0.5rem;
 }
 
 pre[class*='language-'].line-numbers {
