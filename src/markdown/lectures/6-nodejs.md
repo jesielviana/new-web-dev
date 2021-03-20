@@ -1,6 +1,6 @@
 ---
 number: 6
-path: '/lectures/5-nodejs'
+path: '/lectures/6-nodejs'
 date: '2021-03-19'
 title: 'Introdução ao Node.js'
 hidden: false
