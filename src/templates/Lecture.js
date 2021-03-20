@@ -6,10 +6,11 @@ import PropTypes from 'prop-types'
 
 import sharedStyles from './sharedStyles'
 import { maxWidth, PHONE, minWidth, TABLET } from '../constants/widths'
-import { HOME_ROUTE, TEACHER_HOME } from '../constants/routes'
+import { LECTURES_ROUTE, TEACHER_TWITTER } from '../constants/routes'
 import { GRAY } from '../constants/colors'
 // import logo from '../images/webpage.svg'
-import home from '../images/home.svg'
+// import home from '../images/home.svg'
+import listIcon from '../images/list.svg'
 
 const LEFT_KEY_CODE = 'ArrowLeft'
 const RIGHT_KEY_CODE = 'ArrowRight'
@@ -33,6 +34,10 @@ const Wrapper = s.div`
   padding: calc(1rem + 5%) calc(1rem + 20%);
   font-size: 1.5rem;
   overflow: auto;
+
+  img{
+    max-width: 90%;
+  }
 
   h1 {
     font-size: 2.5rem;
@@ -300,7 +305,6 @@ class Lecture extends Component {
   }
 
   nextValid () {
-    console.log('this.nextValid', this.state)
     const { slide, slides } = this.state
     return slide < slides.length - 1
   }
@@ -391,10 +395,10 @@ class Lecture extends Component {
     return (
       <>
         <Header>
-          <LogoLink to={HOME_ROUTE}>
-            <img src={home} alt='Home' />
+          <LogoLink to={LECTURES_ROUTE}>
+            <img src={listIcon} alt='Aulas' />
           </LogoLink>
-          <Autor href={TEACHER_HOME} target='_BLANK'>
+          <Autor href={TEACHER_TWITTER} target='_BLANK'>
             @jesielviana
           </Autor>
           <ThemeToggler>
