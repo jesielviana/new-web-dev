@@ -18,5 +18,15 @@
     "name": "Front End v. Back End",
     "url": "https://blog.codeanalogies.com/2018/04/07/front-end-v-back-end-explained-by-waiting-tables-at-a-restaurant/",
     "lecture": 6
+  },
+    {
+    "name": "JS Modules",
+    "url": "https://eloquentjavascript.net/10_modules.html",
+    "lecture": 7
+  },
+  {
+    "name": "Express",
+    "url": "https://expressjs.com/",
+    "lecture": 7
   }
 ]
