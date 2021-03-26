@@ -71,6 +71,18 @@ const Wrapper = s.div`
     width: 100%;
   }
 
+  .two{
+    display: flex;
+    gap: 0 0.5rem;
+  }
+
+  .two{
+    section{
+      width: 50%
+    }
+  }
+
+
   li {
     margin-bottom: calc(2rem / 2);
     line-height: 1.8rem;
