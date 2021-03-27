@@ -766,7 +766,7 @@ h5 {
   text-align: center !important;
   font-size: 0.9rem;
   margin-top: -1.5rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 input[type='checkbox'] {

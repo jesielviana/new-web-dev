@@ -145,30 +145,30 @@ routes/users.js
 # Separe as regras de negócios das rotas de API
 
 ```js{numberLines: true}
-  async get() {
-    try {
-      return await this.User.find({}, '_id name email');
-    } catch (err) {
-      throw new Error(err);
-    }
+async get() {
+  try {
+    return await this.User.find({}, '_id name email');
+  } catch (err) {
+    throw new Error(err);
   }
+}
 
-  async getById(id) {
-    try {
-      return await this.User.findById(id, '_id name email');
-    } catch (err) {
-      throw new Error(err);
-    }
+async getById(id) {
+  try {
+    return await this.User.findById(id, '_id name email');
+  } catch (err) {
+    throw new Error(err);
   }
+}
 
-  async create(userDTO) {
-    try {
-      const user = new this.User(userDTO);
-      await user.save();
-    } catch (err) {
-      throw new Error(err);
-    }
+async create(userDTO) {
+  try {
+    const user = new this.User(userDTO);
+    await user.save();
+  } catch (err) {
+    throw new Error(err);
   }
+}
 ```
 
 <div  class="reference">
@@ -194,14 +194,14 @@ create(userDTO) {
 }
 
 // good (async await)
-  async create(userDTO) {
-    try {
-      const user = new this.User(userDTO);\
-      await user.save()
-    } catch (err) {
-      throw new Error(err)
-    }
+async create(userDTO) {
+  try {
+    const user = new this.User(userDTO)
+    await user.save()
+  } catch (err) {
+    throw new Error(err)
   }
+}
 
 ```
 
