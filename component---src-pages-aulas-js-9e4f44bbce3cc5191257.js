@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{rqqK:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),r=t.n(n),o=t("RJaA"),l=t("vrFN"),c=t("31Yp");a.default=function(e){var a=e.location;return r.a.createElement(o.a,{location:a},r.a.createElement(l.a,{title:"Aulas",description:"Aulas do Curso de Programação para Internet II - ADS IFPI Picos"}),r.a.createElement("h1",null,"Aulas"),r.a.createElement(c.b,null))}}}]);
+//# sourceMappingURL=component---src-pages-aulas-js-9e4f44bbce3cc5191257.js.map
