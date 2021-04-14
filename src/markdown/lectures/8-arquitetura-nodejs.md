@@ -1,251 +1,84 @@
 ---
-number: 8
-path: '/lectures/8-arquitetura-nodejs'
-date: '2021-03-26'
-title: 'Boas práticas de arquitetura Node.js'
+number: 12
+path: '/lectures/12-nodejs-api-best-pratices'
+date: '2021-04-14'
+title: 'Best practices for Node.js REST API design'
 hidden: false
 ---
 
 class: center, middle, block-text
 
-# Boas práticas de arquitetura Node.js
+# Best practices for Node.js REST API design
 
 Programação para Internet II - ADS 2020.2
 
 Prof. @jesielviana
 
 ---
-
-"Arquitetura de Software é um conjunto de
-decisões de design que, se tomadas
-incorretamente, pode causar o
-cancelamento de um projeto",
-<a href="https://twitter.com/eoinwoodz" targe="_blank">Eoin Woods</a>.
-
-## Principais objetivos de uma boa arquitetura Node.js
-
-- Escrever um código limpo e legível
-- Favorecer a reusabilidade de código/módulos
-- Evitar repetição
-- Adicionar novas funcionalidades sem interromper o código existente
+# Use HTTP Methods & API Routes
+- POST /users to create a new user,
+- GET /users to retrieve a list of users,
+- GET /users/:id to retrieve a user,
+- PATCH /users/:id or PUT /users/:id to modify an existing user record,
+- DELETE /users/:id to remove a user.
 
 ---
 
-# Estrutura de diretórios
+# Use HTTP Status Codes Correctly
+- 2xx, if everything was okay,
+  - 200 Get ok
+  - 201 Post ok
+- 3xx, if the resource was moved,
+- 4xx, if the request cannot be fulfilled because of a client error
+  - 400 Bad Request – This means that client-side input fails validation.
+  - 401 Unauthorized – This means the user isn’t not authorized to access a resource (i.e.: user isn’t authenticated)
+  - 403 Forbidden – This means the user is authenticated, but it’s not allowed to access a resource.
+  - 404 Not Found – This indicates that a resource is not found.
+- 5xx, if something went wrong on the API side.
 
-Diretório root/raiz do projeto
+  ---
 
-```shell
-config/
-src/
-tests/
-.gitignore
-server.js
-package.json
-```
-
-Um padrão comum em diversas linguagens é colocar o código da aplicação em um diretório source normalmente chamado src.
-Dessa maneira evita-se misturar o código de produção com códigos de testes e arquivos de configuração.
-
----
-
-# Estrtura do código da aplicação
-
-<div class="two">
-<section>
-<p>Separação por funcionalidade</p>
-
-```shell{numberLines: false}
-src/
-    products/
-      products.controller.js
-      products.model.js
-      products.routes.js
-    users/
-      users.controller.js
-      users.model.js
-      users.routes.js
-    app.js
-
-```
-
-</section>
-
-<section>
-<p>Separação por responsabilidade</p>
-
-```bash{numberLines: false}
-src/
-    controller/
-      products.js
-      users.
-    model/
-      product.js
-      user.js
-    routes/
-      index.js
-      products.js
-      users.js
-    app.js
-```
-
-</section>
-</div>
+#  Use HTTP headers to Send Metadata
+- authentication
+- pagination,
+- data type.
 
 ---
 
-# Arquitetura em camadas
+# Create Integration Test for yours REST APIs endpoints (Black-Box Tests)
 
-![Node.js Layers](../../images/lectures/nodejs-layers.png)
-
----
-
-# Separe as regras de negócios das rotas de API
-
-```js{numberLines: true}
-router.get('/', async (req, res) => {
-  try {
-    const users = await usersController.get()
-    res.send(users)
-  } catch (err) {
-    res.status(400).send(err)
-  }
-})
-
-router.get('/:id', async (req, res) => {
-  const {
-    params: { id }
-  } = req
-  try {
-    const user = await usersController.getById(id)
-    res.send(user)
-  } catch (err) {
-    res.status(400).send(err)
-  }
-})
-
-router.post('/', async (req, res) => {
-  const { name, email, password } = req.body
-  const userDTO = { name, email, password }
-  try {
-    await usersController.create(userDTO)
-    res.status(201).send('Success!')
-  } catch (err) {
-    res.status(400).send(err)
-  }
-})
-```
-
-<div  class="reference">
-routes/users.js
-</div>
+- express
+- supertest
 
 ---
 
-# Separe as regras de negócios das rotas de API
-
-```js{numberLines: true}
-async get() {
-  try {
-    return await this.User.find({}, '_id name email');
-  } catch (err) {
-    throw new Error(err);
-  }
-}
-
-async getById(id) {
-  try {
-    return await this.User.findById(id, '_id name email');
-  } catch (err) {
-    throw new Error(err);
-  }
-}
-
-async create(userDTO) {
-  try {
-    const user = new this.User(userDTO);
-    await user.save();
-  } catch (err) {
-    throw new Error(err);
-  }
-}
-```
-
-<div  class="reference">
-controllers/users.js
-</div>
+# Create a Proper API Documentation
+- Swagger
+- apidocjs
 
 ---
 
-# Use async await
-
-```js{numberLines: true}
-
-//bad (promise then)
-create(userDTO) {
-  const user = new this.User(req.body)
-  return user.save()
-    .then(() => {
-      console.log('Success!')
-      })
-    .catch((err) => {
-      return err
-    });
-}
-
-// good (async await)
-async create(userDTO) {
-  try {
-    const user = new this.User(userDTO)
-    await user.save()
-  } catch (err) {
-    throw new Error(err)
-  }
-}
-
-```
+# Versioning our APIs
+- /api/v1/users
+-  /api/v2/users
 
 ---
 
-# Prefira arrow functions ao invés de Function expression
-
-```js{numberLines: true}
-// bad
-router.get('/', function (req, res) {
-  res.json(cursos)
-})
-
-// good
-router.get('/', (req, res) => res.json(cursos))
-```
+# Take care of the Security of your application
+- using SSL/TLS for security is a must.
+- use Helmet
 
 ---
 
-# Boa práticas
-
-- Arquivos de configurações em um diretório (config)
-- Use injeção de dependência (flexibilidade, evite acoplamento)
-- Escreva testes unitários para seus controllers/services
-- Use um Style Guide (StandardJS)
-- Use um Linter e Formatter (StandardJS)
-- Use gzip compression
-- Use gerenciadores de processos (pm2, forever)
+# Accept and respond with JSON
+- app.use(express.json())
 
 ---
 
-class: center, middle, block-text
+# References
 
-# Implemente no seu projeto as boa práticas que achar pertinentes
-
----
-
-# Referências
-
-- [https://blog.logrocket.com/the-perfect-architecture-flow-for-your-next-node-js-project/](https://blog.logrocket.com/the-perfect-architecture-flow-for-your-next-node-js-project/)
-- [https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf](https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf)
-- [https://expressjs.com/pt-br/advanced/pm.html](https://expressjs.com/pt-br/advanced/pm.html)
-- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-- [https://imasters.com.br/front-end/entenda-tudo-sobre-asyncawait](https://imasters.com.br/front-end/entenda-tudo-sobre-asyncawait)
+- [10 Best Practices for Writing Node.js REST APIs | @RisingStack](https://blog.risingstack.com/10-best-practices-for-writing-node-js-rest-apis/)
+- [Best practices for REST API design - Stack Overflow Blog](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/)
 
 ---
 
