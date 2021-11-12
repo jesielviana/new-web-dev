@@ -57,7 +57,7 @@ a:visited,
 a:hover,
 a:focus,
 a:active {
-  color: #6764f6;
+  /* color: #6764f6; */
 }
 a:active,
 a:hover {
@@ -780,14 +780,15 @@ input[type='checkbox'] {
 body {
   --bg: #fefefe;
   --text: #111827;
-  --primary: #6d28d9;
+  --primary: #00bfa6;
   --secondary: #5f6c80;
   --toggleIcon: #1f2937;
   --background: #fff;
-  --heading: #1f2937;
+  --heading: #00bfa6;
   --divide: #e5e7eb;
   --bg-color: #f3f4f6;
   --text-color: #6b7280; /** 8C8D91 **/
+  --text-link-lecture: #8b5cf6;
 
   background-color: var(--bg);
   color: var(--text);
@@ -796,12 +797,13 @@ body {
 body.dark {
   --bg: #1a202c;
   --text: #9ca3af;
-  --primary: #8b5cf6;
+  --primary: #00bfa6;
   --secondary: #7f8ea3;
   --toggleIcon: #9ca3af;
   --background: #1a202c;
-  --heading: #d1d5db;
+  --heading: #00bfa6;
   --divide: #4b5563;
   --bg-color: #374151;
   --text-color: #e5e7eb;
+  --text-link-lecture: #7f61c3;
 }

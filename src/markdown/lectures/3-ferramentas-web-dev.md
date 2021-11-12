@@ -96,6 +96,7 @@ Tenha uma IDE, Editor de Código, Cliente de BD configurados para sua produtivid
 - [Todoist](https://todoist.com/)
 - [Toggl track](https://toggl.com/track/)
 - [Notion](https://www.notion.so/)
+- [UpNote](https://getupnote.com/)
 
 ---
 
