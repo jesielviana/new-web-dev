@@ -20,13 +20,10 @@ Prof. @jesielviana
 
 Tenha uma IDE, Editor de Código, Cliente de BD configurados para sua produtividade máxima.
 
-- [VS Code](https://code.visualstudio.com/)
-- [Atom](https://atom.io/)
-- [Vim](https://www.vim.org/download.php)
-- [Jetbrains IDEs](https://www.jetbrains.com/products/#type=ide)
-- [Robo 3T](https://robomongo.org/)
-- [MySql Workbench](https://www.mysql.com/products/workbench/)
-- [pgAdmin](https://www.pgadmin.org/)
+- [VS Code](https://code.visualstudio.com/) (Editor de código, IDE)
+- [Beekeeper Studio](https://www.beekeeperstudio.io/get) (Cliente de banco de dados relacional: Posgres, Mysql...)
+- [Robo 3T](https://robomongo.org/) (Cliente de banco de dados para MongoDB)
+
 
 ---
 
