@@ -11,7 +11,7 @@
     "dev": "yarn develop",
     "rebuild": "yarn removeStatic && yarn develop",
     "start": "npm run develop",
-    "lint": "standard --fix",
+    "lint": "eslint --fix",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "husky": {

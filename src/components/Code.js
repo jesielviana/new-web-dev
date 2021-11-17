@@ -1,6 +1,6 @@
-import React from 'react'
-import Highlight, { defaultProps } from 'prism-react-renderer'
-import PropTypes from 'prop-types'
+import React from 'react';
+import Highlight, { defaultProps } from 'prism-react-renderer';
+import PropTypes from 'prop-types';
 
 /**
  * Render a block of code with syntax highlighting via prism
@@ -18,12 +18,12 @@ export const Code = ({ code, language, lang, js, html, bash, json }) => (
       language || lang || js
         ? 'js'
         : html
-          ? 'html'
-          : bash
-            ? 'bash'
-            : json
-              ? 'json'
-              : 'text'
+        ? 'html'
+        : bash
+        ? 'bash'
+        : json
+        ? 'json'
+        : 'text'
     }
   >
     {({ className, style, tokens, getLineProps, getTokenProps }) => (
@@ -47,7 +47,7 @@ export const Code = ({ code, language, lang, js, html, bash, json }) => (
       </pre>
     )}
   </Highlight>
-)
+);
 
 Code.defaultProps = {
   language: null,
@@ -55,8 +55,8 @@ Code.defaultProps = {
   js: false,
   html: false,
   bash: false,
-  json: false
-}
+  json: false,
+};
 
 Code.propTypes = {
   code: PropTypes.string.isRequired,
@@ -65,5 +65,5 @@ Code.propTypes = {
   js: PropTypes.bool,
   html: PropTypes.bool,
   bash: PropTypes.bool,
-  json: PropTypes.bool
-}
+  json: PropTypes.bool,
+};
