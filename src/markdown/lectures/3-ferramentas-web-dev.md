@@ -10,7 +10,7 @@ class: center, middle, block-text
 
 # Ferramentas Cloud para Web
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana
 
@@ -112,6 +112,6 @@ class: center, middle, block-text
 
 # Ferramentas Cloud para Web
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana

@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import s from 'styled-components'
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import s from 'styled-components';
 // import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 // import { BORDER, WHITE } from '../../constants/colors'
-import { maxWidth, TABLET } from '../../constants/widths'
+import { maxWidth, TABLET } from '../../constants/widths';
 // import { Logo } from './Logo'
-import { Links } from './Links'
-import { Footer } from './Footer'
-import { Bars } from './Bars'
+import { Links } from './Links';
+import { Footer } from './Footer';
+import { Bars } from './Bars';
 
-const Z_INDEX = 1300
-const MOBILE_NAV_HEIGHT = '53px'
+const Z_INDEX = 1300;
+const MOBILE_NAV_HEIGHT = '53px';
 /* eslint-disable react/jsx-handler-names */
 const Shade = s.div`
   display: none;
@@ -27,7 +27,7 @@ const Shade = s.div`
     top: 0;
     z-index: ${Z_INDEX - 1};
   }
-`
+`;
 
 const Nav = s.nav`
   position: fixed;
@@ -52,7 +52,7 @@ const Nav = s.nav`
 
     max-height: ${({ active }) => (active ? '100vh' : MOBILE_NAV_HEIGHT)};
   }
-`
+`;
 
 const NavSpacer = s.div`
   width: 20%;
@@ -63,12 +63,12 @@ const NavSpacer = s.div`
     max-width: 100%;
     height: ${MOBILE_NAV_HEIGHT};
   }
-`
+`;
 
 const LogoText = s(Link)`
   color: var(--heading) !important;
   text-decoration: none !important;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Varela Round';
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
@@ -81,23 +81,23 @@ const LogoText = s(Link)`
     margin-bottom: 0;
     font-size: 1.25rem;
   }
-`
+`;
 
 class Header extends Component {
-  constructor (props) {
-    super(props)
-    this.state = { active: false }
-    this.toggle = this.toggle.bind(this)
+  constructor(props) {
+    super(props);
+    this.state = { active: false };
+    this.toggle = this.toggle.bind(this);
   }
 
-  toggle () {
-    const { active } = this.state
-    this.setState({ active: !active })
+  toggle() {
+    const { active } = this.state;
+    this.setState({ active: !active });
   }
 
-  render () {
-    const { siteTitle } = this.props
-    const { active } = this.state
+  render() {
+    const { siteTitle } = this.props;
+    const { active } = this.state;
 
     return (
       <>
@@ -106,7 +106,7 @@ class Header extends Component {
 
           <Bars handleClick={this.toggle} />
 
-          <LogoText to='/'>{siteTitle}</LogoText>
+          <LogoText to="/">{siteTitle}</LogoText>
 
           <Links active={active} />
 
@@ -131,16 +131,16 @@ class Header extends Component {
 
         <NavSpacer />
       </>
-    )
+    );
   }
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string
-}
+  siteTitle: PropTypes.string,
+};
 
 Header.defaultProps = {
-  siteTitle: ''
-}
+  siteTitle: '',
+};
 
-export default Header
+export default Header;

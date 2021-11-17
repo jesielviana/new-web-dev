@@ -12,7 +12,7 @@ class: center, middle, block-text
 
 ![Logo do Node.js](../../images/lectures/nodejs.png)
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana
 
@@ -141,6 +141,6 @@ class: center, middle, block-text
 
 ![Logo do Node.js](../../images/lectures/nodejs.png)
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana

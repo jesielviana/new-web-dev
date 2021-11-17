@@ -10,6 +10,11 @@
     "lecture": 3
   },
   {
+    "name": "Integração contínua",
+    "url": "https://aws.amazon.com/pt/devops/continuous-integration/",
+    "lecture": 4
+  },
+  {
     "name": "Construindo APIs testáveis com Node.js",
     "url": "https://leanpub.com/construindo-apis-testaveis-com-nodejs",
     "lecture": 6

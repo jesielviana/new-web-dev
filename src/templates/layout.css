@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round:400,700');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700');
 
 html {
@@ -655,6 +655,7 @@ h3,
 h4,
 h5 {
   color: var(--heading);
+  font-family: 'Varela Round';
 }
 
 .toggle-color-mode:checked {

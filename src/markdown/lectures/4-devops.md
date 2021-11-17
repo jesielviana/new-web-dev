@@ -10,7 +10,7 @@ class: center, middle, block-text
 
 # Práticas DevOps
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana
 
@@ -48,41 +48,39 @@ A **Implantação Contínua - Continuous Deployment (CD)** vai um passo além da
 
 class: center, middle, block-text
 
-# Fluxo DevOps
+# Versionamento Semântico
 
-![image](../../images/lectures/ci-cd-flow.png)
-<small><a href="https://www.redhat.com/pt-br/topics/devops/what-is-continuous-delivery" target="_blank">Fonte</a></small>
-
----
-
-# Prática com Gitflow
-
-- **master/main**: contém o nosso código de produção, todo o código que estamos desenvolvendo, em algum momento será “juntado” com essa branch.
-
-- **develop**: contém o código do nosso próximo deploy, isso significa que conforme as features vão sendo finalizadas elas vão sendo juntadas nesta branch para posteriormente passarem por mais uma etapa antes de ser juntada com a master.
-
-- **feature**: são branches para o desenvolvimento de uma funcionalidade específica, por convenção elas tem o nome iniciado por feature/, por exemplo: feature/cadastro-usuarios. Importante ressaltar que essas branches são criadas sempre à partir da branch develop.
-
-- **hotfix**: são branches responsáveis pela realização de alguma correção crítica encontrada em produção e por isso são criadas à partir da master. Importante ressaltar que essa branch deve ser juntada tanto com a master quanto com a develop.
-
-- **tag**: Uma tag é como um branch, uma vez que ela identifica um commit específico com um rótulo descritivo. tags são referências imutáveis.
+[https://semver.org/lang/pt-BR/](https://semver.org/lang/pt-BR/)
 
 ---
 
 class: center, middle, block-text
 
-# Gitflow
+# Fluxo de integração contínua
 
-![image](../../images/lectures/gitflow.png)
+![image](../../images/lectures/devops-flow.png)
+<small><a href="https://aws.amazon.com/pt/devops/continuous-integration/" target="_blank">Fonte</a></small>
 
-<small><a href="https://maximgorbatyuk.gitbook.io/knowledge-base/software-development/2019-11-27-gitflow-short-info" target="_blank">[4]</a></small>
+---
+
+class: center, middle, block-text
+
+![image](../../images/lectures/ciclo-dev.png)
+
+---
+
+class: center, middle, block-text
+
+![image](../../images/lectures/pipeline.png)
 
 ---
 
 # Ferramentas
 
-- Github Actions
-- Gitlab CI/CD
+- **[Github Actions](https://docs.github.com/pt/actions)**
+- [Gitlab CI/CD](https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/)
+- [Jenkins](https://www.jenkins.io/)
+- [Travis-ci](https://www.travis-ci.com/)
 
 ---
 
@@ -92,6 +90,17 @@ class: center, middle, block-text
 - Geralmente nós ficamos enjoados em fazer tarefas repetitivas;
 - Produtividade, foque no que é nas tarefas que o computador não pode fazer por você.
 - etc...
+
+---
+
+# Vantagens do DevOps
+
+- Velocidade;
+- Entrega rápida;
+- Confiabilidade;
+- Escala;
+- Colaboração melhorada;
+- Segurança.
 
 ---
 
@@ -105,6 +114,6 @@ class: center, middle, block-text
 
 # Práticas DevOps
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana

@@ -10,7 +10,7 @@ class: center, middle, block-text
 
 # Best practices for Node.js REST API design
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana
 
@@ -86,6 +86,6 @@ class: center, middle, block-text
 
 # Boas práticas de arquitetura Node.js
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana

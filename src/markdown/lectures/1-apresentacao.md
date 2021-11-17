@@ -10,7 +10,7 @@ class: center, middle, block-text
 
 # Programação para Internet II
 
-ADS 2020.2 - IFPI Campus Picos
+ADS - IFPI Campus Picos
 
 Prof. @jesielviana
 

@@ -10,7 +10,7 @@ class: center, middle, block-text
 
 # Arquitetura de Aplicações Web
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana
 
@@ -118,6 +118,6 @@ class: center, middle, block-text
 
 # Arquitetura de Aplicações Web
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana

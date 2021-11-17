@@ -40,7 +40,7 @@ const Wrapper = s.div`
   }
 
   img{
-    max-width: 90%;
+    max-width: 100%;
   }
 
   h1 {
@@ -50,7 +50,7 @@ const Wrapper = s.div`
     }
   }
 
-  h2, h3 {
+  h4 {
     color: #1A202C
   }
 
@@ -60,7 +60,7 @@ const Wrapper = s.div`
   h4,
   h5,
   h6 {
-    font-family: Yanone Kaffeesatz;
+    font-family: Varela Round;
     code {
       font-size: inherit;
       font-size: 80%;
@@ -102,10 +102,18 @@ const Wrapper = s.div`
   }
 
   .middle {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      position: relative !important;
+    }
+
+    span.gatsby-resp-image-background-image{
+      display: none !important;
+    }
   }
 
   .block-text {

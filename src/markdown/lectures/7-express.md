@@ -10,7 +10,7 @@ class: center, middle, block-text
 
 # Introdução ao Express Framework
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana
 
@@ -280,6 +280,6 @@ class: center, middle, block-text
 
 # Introdução ao Express Framework
 
-Programação para Internet II - ADS 2020.2
+Programação para Internet II - ADS
 
 Prof. @jesielviana
