@@ -2,7 +2,7 @@
 number: 5
 path: '/lectures/5-arquitetura-web'
 date: '2021-03-02'
-title: 'Arquitetura Web'
+title: 'Arquitetura de aplicações Web'
 hidden: false
 ---
 
@@ -60,7 +60,6 @@ Geralmente baseada na arquitetura cliente-servidor, porém com mais outras camad
 </div>
 
 - Server-rendered HTML
-- Nova alternativa: [https://hotwire.dev/](https://hotwire.dev/)
 
 ---
 
