@@ -158,7 +158,7 @@ yarn add express
 # Hello World
 
 ```javascript{numberLines: true}
-const express = require('express')
+import express from 'express'
 const app = express()
 const port = 3000
 
